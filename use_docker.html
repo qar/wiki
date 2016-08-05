@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>use_docker</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<ol>
+<li>
+chapter 1
+
+</ol>
+
+<ol>
+<li>
+Containers are an encapsulation of an application with its dependencies
+
+<li>
+Containers should compare to VMs
+
+<li>
+Containers are an old concept. (chroot of UNIX)
+
+<li>
+Docker took the existing Linux container technology and wrapped and extended it in various ways—primarily through portable images and a user-friendly interface—to create a complete solution for the creation and distribution of containers.
+
+</ol>
+
+<ol>
+<li>
+Chapter 2
+
+</ol>
+
+<ol>
+<li>
+assume your hardware is okay.
+
+<li>
+<code>curl -sSL https://get.docker.com | sh</code>
+
+<li>
+Quick Check: <code>docker version</code>
+
+</ol>
+
+<ol>
+<li>
+Chapter 3
+
+</ol>
+
+<ol>
+<li>
+<code>docker run</code> is responsible for lunch containers
+
+<li>
+<code>docker run -i -t</code> means we want an interactive session with a tty attached.
+
+<li>
+<code>docker run -h HOSTNAME</code> give container a hostname <code>HOSTNAME</code>
+
+<li>
+<code>docker logs</code> list everything happened inside a container
+
+<li>
+If you want to get rid of all your stopped containers, you can use the output of <code>docker ps -aq -f status=exited</code>, which gets the IDs of all stopped containers. 
+
+<li>
+Clean up stopped containers: <code>docker rm -v $(docker ps -aq -f status=exited)</code>
+
+<li>
+<code>docker diff CONTAINER_NAME</code> find out the changes within the specific container
+
+</ol>
+
+<ol>
+<li>
+Extra
+
+<li>
+combine several images into one via Dockerfile <a href="https:&#47;&#47;github.com&#47;docker&#47;docker&#47;issues&#47;3378">https://github.com/docker/docker/issues/3378</a>
+
+</ol>
+
+</body>
+</html>

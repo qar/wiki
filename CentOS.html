@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>CentOS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<ol>
+<li>
+最小化安装的系统 (minimal install) 缺少 ifconfig 命令，执行 <code>yum install net-tools</code>
+
+<li>
+CentOS Minimal Install Setup: 
+
+</ol>
+<blockquote>
+curl "<a href="https:&#47;&#47;bootstrap.pypa.io&#47;get-pip.py&quot;">https://bootstrap.pypa.io/get-pip.py"</a> -o "get-pip.py"
+python get-pip.py
+yum install gcc
+yum install python-devel
+yum install openssl-devel
+yum install openldap-devel
+</blockquote>
+    
+<ol>
+<li>
+升级内核
+   <a href="http:&#47;&#47;www.cloudibee.com&#47;change-default-boot-kernel-in-linux-grub2&#47;">http://www.cloudibee.com/change-default-boot-kernel-in-linux-grub2/</a>
+
+</ol>
+   
+<p>
+   rpm -Uvh <a href="http:&#47;&#47;www.elrepo.org&#47;elrepo-release-7.0-2.el7.elrepo.noarch.rpm">http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm</a>
+   yum install yum-plugin-fastestmirror
+   yum --enablerepo=elrepo-kernel install kernel-ml
+   grep ^menuentry /boot/grub2/grub.cfg | cut -f 2 -d \' | nl -v 0
+   grub2-set-default 2
+</p>
+   
+<ol>
+<li>
+Delta RPMs
+   <a href="https:&#47;&#47;www.certdepot.net&#47;rhel7-get-started-delta-rpms&#47;">https://www.certdepot.net/rhel7-get-started-delta-rpms/</a>
+
+</ol>
+
+</body>
+</html>

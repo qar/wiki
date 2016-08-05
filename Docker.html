@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Docker</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+
+<ol>
+<li>
+Instll docker-compose 1.8.0
+
+</ol>
+<p>
+curl -L <a href="https:&#47;&#47;github.com&#47;docker&#47;compose&#47;releases&#47;download&#47;1.8.0&#47;docker-compose-">https://github.com/docker/compose/releases/download/1.8.0/docker-compose-</a><code>uname -s</code>-<code>uname -m</code> &gt; /usr/local/bin/docker-compose
+</p>
+
+<ol>
+<li>
+Docker image name convention: <a href="https:&#47;&#47;access.redhat.com&#47;documentation&#47;en&#47;red-hat-enterprise-linux-atomic-host&#47;7&#47;recommended-practices-for-container-development&#47;chapter-4-image-naming-conventions">https://access.redhat.com/documentation/en/red-hat-enterprise-linux-atomic-host/7/recommended-practices-for-container-development/chapter-4-image-naming-conventions</a>
+
+</ol>
+
+<div id="Docker Image Name Convention"><h2 id="Docker Image Name Convention">Docker Image Name Convention</h2></div>
+<p>
+以 redis 软件为例，以下几种写法都是合法的:
+</p>
+
+<ol>
+<li>
+redis
+
+<li>
+docker.io/library/redis
+
+<li>
+test-registry/test-user/redis
+
+<li>
+test-registry/test-user/redis:latest
+
+<li>
+test-registry/test-user/redis:0.0.1
+
+<li>
+test-registry/test-user/redis:v0.1.1
+
+<li>
+test-registry/test-user/redis@sha256:fd748d598c09a943f3101f7a5926b3799a52ea7ac5c31460bd15133bdde5c2bf
+
+<li>
+another-registry:8888/test-user/redis:latest
+
+<li>
+test-user/redis:latest
+
+</ol>
+
+<p>
+其中:
+</p>
+
+<ol>
+<li>
+这是最简写法，表示使用 docker 官方的镜像仓库，即与 「2」等价。同时，忽略版本号表示使用 'latest' 标签  
+
+<li>
+表示使用 docker 官方的 redis 镜像的 'latest' 版本
+
+<li>
+表示使用 test-registry 镜像仓库的 test-user 用户的 redis 镜像的 latest 版本
+
+<li>
+「4」和「3」等价
+
+<li>
+同上，只是使用 0.0.1 版本
+
+<li>
+同上，只是使用 v0.1.1 版本。4，5，6 在一起对比只是想说明镜像对 tag 的写法并没有要求
+
+<li>
+「7」与「6」的不同点在于 tag 的类型。「7」的 tag 是镜像的 ID，这个 ID 具有全局唯一性，但是它的实现方式并不固定。
+
+<li>
+「8」与「4」的不同在于 registry 部分使用了非 80 端口
+
+<li>
+使用 docker hub 中 test-user 用户的 redis 镜像
+
+</ol>
+
+<p>
+参考文献:
+</p>
+<ol>
+<li>
+<a href="https:&#47;&#47;github.com&#47;docker&#47;distribution&#47;blob&#47;master&#47;reference&#47;regexp.go">https://github.com/docker/distribution/blob/master/reference/regexp.go</a>
+
+<li>
+<a href="https:&#47;&#47;github.com&#47;docker&#47;docker&#47;blob&#47;master&#47;docs&#47;reference&#47;commandline&#47;tag.md">https://github.com/docker/docker/blob/master/docs/reference/commandline/tag.md</a>
+
+</ol>
+
+</body>
+</html>
