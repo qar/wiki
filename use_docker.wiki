@@ -1,0 +1,25 @@
+# chapter 1
+
+1. Containers are an encapsulation of an application with its dependencies
+2. Containers should compare to VMs
+3. Containers are an old concept. (chroot of UNIX)
+4. Docker took the existing Linux container technology and wrapped and extended it in various ways—primarily through portable images and a user-friendly interface—to create a complete solution for the creation and distribution of containers.
+
+# Chapter 2
+
+1. assume your hardware is okay.
+2. `curl -sSL https://get.docker.com | sh`
+3. Quick Check: `docker version`
+
+# Chapter 3
+
+1. `docker run` is responsible for lunch containers
+2. `docker run -i -t` means we want an interactive session with a tty attached.
+3. `docker run -h HOSTNAME` give container a hostname `HOSTNAME`
+4. `docker logs` list everything happened inside a container
+5. If you want to get rid of all your stopped containers, you can use the output of `docker ps -aq -f status=exited`, which gets the IDs of all stopped containers. 
+6. Clean up stopped containers: `docker rm -v $(docker ps -aq -f status=exited)`
+7. `docker diff CONTAINER_NAME` find out the changes within the specific container
+
+# Extra
+1. combine several images into one via Dockerfile https://github.com/docker/docker/issues/3378

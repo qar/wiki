@@ -1,0 +1,34 @@
+
+1. Instll docker-compose 1.8.0
+curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+
+1. Docker image name convention: https://access.redhat.com/documentation/en/red-hat-enterprise-linux-atomic-host/7/recommended-practices-for-container-development/chapter-4-image-naming-conventions
+
+== Docker Image Name Convention ==
+以 redis 软件为例，以下几种写法都是合法的:
+
+1. redis
+2. docker.io/library/redis
+3. test-registry/test-user/redis
+4. test-registry/test-user/redis:latest
+5. test-registry/test-user/redis:0.0.1
+6. test-registry/test-user/redis:v0.1.1
+7. test-registry/test-user/redis@sha256:fd748d598c09a943f3101f7a5926b3799a52ea7ac5c31460bd15133bdde5c2bf
+8. another-registry:8888/test-user/redis:latest
+9. test-user/redis:latest
+
+其中:
+
+1. 这是最简写法，表示使用 docker 官方的镜像仓库，即与 「2」等价。同时，忽略版本号表示使用 'latest' 标签  
+2. 表示使用 docker 官方的 redis 镜像的 'latest' 版本
+3. 表示使用 test-registry 镜像仓库的 test-user 用户的 redis 镜像的 latest 版本
+4. 「4」和「3」等价
+5. 同上，只是使用 0.0.1 版本
+6. 同上，只是使用 v0.1.1 版本。4，5，6 在一起对比只是想说明镜像对 tag 的写法并没有要求
+7. 「7」与「6」的不同点在于 tag 的类型。「7」的 tag 是镜像的 ID，这个 ID 具有全局唯一性，但是它的实现方式并不固定。
+8. 「8」与「4」的不同在于 registry 部分使用了非 80 端口
+9. 使用 docker hub 中 test-user 用户的 redis 镜像
+
+参考文献:
+1. https://github.com/docker/distribution/blob/master/reference/regexp.go
+2. https://github.com/docker/docker/blob/master/docs/reference/commandline/tag.md

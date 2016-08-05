@@ -1,0 +1,6 @@
+= Boxes =
+
+https://atlas.hashicorp.com/boxes/search
+
+== CentOS 7.X ==
+https://atlas.hashicorp.com/bento/boxes/centos-7.2

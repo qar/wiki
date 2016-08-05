@@ -1,0 +1,6 @@
+= 3rd party modules and tools =
+
+1. http://fabfile.org
+
+Douban PyPi Mirror
+`-i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com`

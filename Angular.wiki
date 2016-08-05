@@ -1,0 +1,9 @@
+= ngForm =
+
+https://docs.angularjs.org/api/ng/directive/ngForm
+
+= Recipies =
+
+1. Implement a delay on scope watch http://stackoverflow.com/questions/20397253/implement-a-delay-on-scope-watch
+2. 对于 SVG 的属性 xlink:href 需要动态指定值时，这样写比较好: 
+    `<use ng-href="{{ integration.Type | imageFilter:'#icon_puzzle-big' }}" xlink:href=""></use>`

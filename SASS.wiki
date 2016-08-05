@@ -1,0 +1,2 @@
+= Convention =
+1. Object Oriented CSS: http://thesassway.com/intermediate/using-object-oriented-css-with-sass

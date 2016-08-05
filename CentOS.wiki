@@ -1,0 +1,21 @@
+1. 最小化安装的系统 (minimal install) 缺少 ifconfig 命令，执行 `yum install net-tools`
+2. CentOS Minimal Install Setup: 
+  
+    curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
+    python get-pip.py
+    yum install gcc
+    yum install python-devel
+    yum install openssl-devel
+    yum install openldap-devel
+    
+3. 升级内核
+   http://www.cloudibee.com/change-default-boot-kernel-in-linux-grub2/
+   
+   rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
+   yum install yum-plugin-fastestmirror
+   yum --enablerepo=elrepo-kernel install kernel-ml
+   grep ^menuentry /boot/grub2/grub.cfg | cut -f 2 -d \' | nl -v 0
+   grub2-set-default 2
+   
+4. Delta RPMs
+   https://www.certdepot.net/rhel7-get-started-delta-rpms/
