@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="Stylesheet" type="text/css" href="style.css">
-<title>Docker</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="Stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Anran's Notes | Docker</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
-
+  <div class="container">
+  
 
 <ol>
 <li>
@@ -20,6 +23,16 @@ curl -L <a href="https:&#47;&#47;github.com&#47;docker&#47;compose&#47;releases&
 <ol>
 <li>
 Docker image name convention: <a href="https:&#47;&#47;access.redhat.com&#47;documentation&#47;en&#47;red-hat-enterprise-linux-atomic-host&#47;7&#47;recommended-practices-for-container-development&#47;chapter-4-image-naming-conventions">https://access.redhat.com/documentation/en/red-hat-enterprise-linux-atomic-host/7/recommended-practices-for-container-development/chapter-4-image-naming-conventions</a>
+
+</ol>
+
+<div id="Operations"><h2 id="Operations">Operations</h2></div>
+<ol>
+<li>
+remove all stopped containers: <code>docker rm $(docker ps -a -q)</code>
+
+<li>
+remove all untagged images: <code>docker rmi \((docker images | grep "^&lt;none&gt;" | awk "{print \)3}")</code>
 
 </ol>
 
@@ -64,7 +77,7 @@ test-user/redis:latest
 
 <ol>
 <li>
-这是最简写法，表示使用 docker 官方的镜像仓库，即与 「2」等价。同时，忽略版本号表示使用 'latest' 标签  
+这是最简写法，表示使用 docker 官方的镜像仓库，即与 「2」等价。同时，忽略版本号表示使用 'latest' 标签
 
 <li>
 表示使用 docker 官方的 redis 镜像的 'latest' 版本
@@ -104,5 +117,36 @@ test-user/redis:latest
 
 </ol>
 
+
+<div id="Basic Private Registry"><h2 id="Basic Private Registry">Basic Private Registry</h2></div>
+<p>
+<a href="https:&#47;&#47;docs.docker.com&#47;registry&#47;#&#47;tl-dr">https://docs.docker.com/registry/#/tl-dr</a>
+</p>
+
+
+<div id="Others"><h2 id="Others">Others</h2></div>
+<ol>
+<li>
+Be aware how changes to package.json affect image cache when building NodeJS apps
+
+</ol>
+
+<div id="Docker 1.12 Questions"><h2 id="Docker 1.12 Questions">Docker 1.12 Questions</h2></div>
+
+<div id="Docker 1.12 Questions-Which mode is the default mode ? vip or dnsrr ?"><h4 id="Which mode is the default mode ? vip or dnsrr ?">Which mode is the default mode ? vip or dnsrr ?</h4></div>
+<p>
+seems like <code>dnsrr</code> is the default mode.
+</p>
+
+<p>
+References:
+</p>
+<ol>
+<li>
+<a href="https:&#47;&#47;docs.docker.com&#47;engine&#47;userguide&#47;networking&#47;default_network&#47;configure-dns&#47;#&#47;configure-container-dns">https://docs.docker.com/engine/userguide/networking/default_network/configure-dns/#/configure-container-dns</a>
+
+</ol>
+
+  </div>
 </body>
 </html>
