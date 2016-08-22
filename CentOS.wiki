@@ -18,4 +18,5 @@
    grub2-set-default 2
    
 4. Delta RPMs
+   TL;DR: `yum install -y deltarpm`
    https://www.certdepot.net/rhel7-get-started-delta-rpms/

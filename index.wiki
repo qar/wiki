@@ -1,4 +1,7 @@
+
 [[use_docker]]
+
+[[Naming Convention]]
 
 [[Docker]]
 
@@ -44,13 +47,15 @@
 
 https://github.com/robbyrussell/oh-my-zsh
 
+[[Others]]
+
 1. Count lines: `wc -l <filepath>`
 2. Convert .mov to .mp4 `ffmpeg -i movie.mov -vcodec copy -acodec copy out.mp4`
 3. Firefox history releases: https://ftp.mozilla.org/pub/firefox/releases/
 4. CentOS time sync: `yum install ntp && chkconfig ntpd on`
 5. CentOS sync time immediately: `ntpdate time.apple.com`
 6. UML Diagram: `http://plantuml.com/`
-7. Node read file: 
+7. Node read file:
 
 angular 中验证 input 输入的内容时，如果input 的 type 属性是 email，此时，如果 input 的内容不符合input 标签对 email 格式的检查，是不会把 input 输入框的内容反射到 input 标签绑定的 ng-model 上的。推荐的做法是 input 尽量统一使用 type="text"，然后自行实现对内容的验证以及错误处理
 

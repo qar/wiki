@@ -4,6 +4,10 @@ curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose
 
 1. Docker image name convention: https://access.redhat.com/documentation/en/red-hat-enterprise-linux-atomic-host/7/recommended-practices-for-container-development/chapter-4-image-naming-conventions
 
+== Operations ==
+1. remove all stopped containers: `docker rm $(docker ps -a -q)`
+2. remove all untagged images: `docker rmi $(docker images | grep "^<none>" | awk "{print $3}")`
+
 == Docker Image Name Convention ==
 以 redis 软件为例，以下几种写法都是合法的:
 
@@ -19,7 +23,7 @@ curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose
 
 其中:
 
-1. 这是最简写法，表示使用 docker 官方的镜像仓库，即与 「2」等价。同时，忽略版本号表示使用 'latest' 标签  
+1. 这是最简写法，表示使用 docker 官方的镜像仓库，即与 「2」等价。同时，忽略版本号表示使用 'latest' 标签
 2. 表示使用 docker 官方的 redis 镜像的 'latest' 版本
 3. 表示使用 test-registry 镜像仓库的 test-user 用户的 redis 镜像的 latest 版本
 4. 「4」和「3」等价
@@ -32,3 +36,19 @@ curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose
 参考文献:
 1. https://github.com/docker/distribution/blob/master/reference/regexp.go
 2. https://github.com/docker/docker/blob/master/docs/reference/commandline/tag.md
+
+
+== Basic Private Registry ==
+https://docs.docker.com/registry/#/tl-dr
+
+
+== Others ==
+1. Be aware how changes to package.json affect image cache when building NodeJS apps
+
+== Docker 1.12 Questions ==
+
+==== Which mode is the default mode ? vip or dnsrr ? ====
+seems like `dnsrr` is the default mode.
+
+References:
+1. https://docs.docker.com/engine/userguide/networking/default_network/configure-dns/#/configure-container-dns

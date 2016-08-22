@@ -2,3 +2,6 @@
 Paste text in visual mode without yank
 http://stackoverflow.com/a/5093286/2609042
 `xnoremap p pgvy`
+
+==== 在 VIM 中格式化压缩后的 JSON 文件 ====
+`%!python -m json.tool`

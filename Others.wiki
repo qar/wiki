@@ -1,0 +1,14 @@
+
+- String digest algorithm
+- ETCD Browser: http://henszey.github.io/etcd-browser/
+
+解谜网站
+
+http://www.one-story.cn/nazopuzzle/Pac-Man.html
+进行到了第 28 关，我觉得答案应该是 8008208820 ，但是 http://www.one-story.cn/nazopuzzle/8008208820.html 是 404 页，不知道该怎样继续了
+原来是 400 开头，这和我的记忆不相符，猜不到 http://www.one-story.cn/nazopuzzle/4008208820.html
+
+
+=== Living Fossils 活化石 ===
+
+- Horseshoe Crab 鲎 四亿五千万年前出现的生物 https://en.wikipedia.org/wiki/Horseshoe_crab 
