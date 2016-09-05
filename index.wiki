@@ -1,8 +1,6 @@
 
 [[use_docker]]
 
-[[Naming Convention]]
-
 [[Docker]]
 
 [[ZSH]]
@@ -49,92 +47,5 @@ https://github.com/robbyrussell/oh-my-zsh
 
 [[Others]]
 
-1. Count lines: `wc -l <filepath>`
-2. Convert .mov to .mp4 `ffmpeg -i movie.mov -vcodec copy -acodec copy out.mp4`
-3. Firefox history releases: https://ftp.mozilla.org/pub/firefox/releases/
-4. CentOS time sync: `yum install ntp && chkconfig ntpd on`
-5. CentOS sync time immediately: `ntpdate time.apple.com`
-6. UML Diagram: `http://plantuml.com/`
-7. Node read file:
 
-angular 中验证 input 输入的内容时，如果input 的 type 属性是 email，此时，如果 input 的内容不符合input 标签对 email 格式的检查，是不会把 input 输入框的内容反射到 input 标签绑定的 ng-model 上的。推荐的做法是 input 尽量统一使用 type="text"，然后自行实现对内容的验证以及错误处理
-
-
-git commit
-
-commit message 里不要写你做了什么，而是要写为什么要这么做，解决了什么问题. 写好 git commit message 的一个方式是，make a commit
-时想好这些内容怎样体现在 changelog 中
-
-git commits between tags:
-
-
-
-DCE-Changelog
-
-
-ESLINT
-
-no-unused-vars 有时候我想定义一个全局变量，但是只在函数内调用。这时候 eslint 会报这个错误。
-
-Protractor E2E test
-element(by.partialLinkText('d...')).click();
-这样的测试为什么会超时呢？
-
-E2E 可能会帮你发现异常，但是难以帮你定位错误, 而且学习成本很高，至少对我来讲是这样，太多的概念。花了两个小时都没能把一个简单的 welcome 页面的测试完成。
-
-
-
-
-    this.servIntro = {
-      'ScaleIO': `EMC ScaleIO 是一款软件定义的解决方案，
-                  可利用您的现有硬件或 EMC 服务器将现有 DAS 存储转换为共享数据块存储。`,
-
-      'AWS-EBS': `Amazon Elastic Block Store (Amazon EBS) 可在 AWS 云中提供用于
-                  Amazon EC2 实例的持久性数据块级存储卷。
-                  每个 Amazon EBS 卷在其可用区内自动复制，以保护您免于组件故障的威胁，
-                  同时提供高可用性和持久性。Amazon EBS 卷为您提供处理工作所需的稳定低延迟性能。
-                  通过 Amazon EBS，您可在几分钟内调整用量大小 –
-                  所有这些您只需为配置的资源量支付低廉的价格。`,
-
-      'Splunk': `Splunk® offers the leading platform for Operational Intelligence.
-                 It enables the curious to look closely at what others
-                 ignore—machine data—and find what others never see:
-                 insights that can help make your company more productive,
-                 profitable, competitive and secure.`,
-
-      'Graylog2': `Centralize and aggregate all your log files for 100% visibility.
-                   Use our powerful query language to search through terabytes of
-                   log data to discover and analyze important information.`,
-
-      'AWS-Log': '',
-
-      'DataDog': `Datadog is a SaaS-based monitoring and analytics platform for IT infrastructure,
-                  operations and development teams. It brings together data from servers,
-                  databases, applications, tools and services to present a unified view of
-                  the applications that run at scale in the cloud.`,
-
-      'vSphere': `The vSphere platform is the best foundation for your applications,
-                  your cloud and your business.
-                  vSphere helps you get the best performance, availability,
-                  and efficiency from your infrastructure and applications.
-                  It’s the ideal foundation for any cloud environment.
-                  vSphere with Operations Management takes vSphere to the next level
-                  with intelligent operations and consistent management.
-                  It provides you better insights,
-                  resulting in better performance and availability`,
-    };
-    this.data = data;
-  }
-}
-
-
-
-
-
-# VIM Profilling
-# :profile start profile.log
-# :profile func *
-# :profile file *
-# " At this point do slow actions
-# :profile pause
-# :noautocmd qall!
+6214 8321 3077 6714

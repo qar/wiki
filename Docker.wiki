@@ -52,3 +52,6 @@ seems like `dnsrr` is the default mode.
 
 References:
 1. https://docs.docker.com/engine/userguide/networking/default_network/configure-dns/#/configure-container-dns
+
+:etcd_browser:
+http://henszey.github.io/etcd-browser/

@@ -5,5 +5,41 @@ https://docs.angularjs.org/api/ng/directive/ngForm
 = Recipies =
 
 1. Implement a delay on scope watch http://stackoverflow.com/questions/20397253/implement-a-delay-on-scope-watch
-2. 对于 SVG 的属性 xlink:href 需要动态指定值时，这样写比较好: 
+2. 对于 SVG 的属性 xlink:href 需要动态指定值时，这样写比较好:
     `<use ng-href="{{ integration.Type | imageFilter:'#icon_puzzle-big' }}" xlink:href=""></use>`
+
+:angular:performance:
+https://github.com/Pasvaz/bindonce
+https://github.com/angular/batarang
+http://stackoverflow.com/questions/25641714/angularjs-single-core-cpu-almost-100-cpu
+
+https://medium.com/@kentcdodds/counting-angularjs-watchers-11c5134dc2ef#.qvc7qfus2
+
+{{{class="code-format: javascript"
+
+function getWatchers(root) {
+  root = angular.element(root || document.documentElement);
+  var watcherCount = 0;
+
+  function getElemWatchers(element) {
+    var isolateWatchers = getWatchersFromScope(element.data().$isolateScope);
+    var scopeWatchers = getWatchersFromScope(element.data().$scope);
+    var watchers = scopeWatchers.concat(isolateWatchers);
+    angular.forEach(element.children(), function (childElement) {
+      watchers = watchers.concat(getElemWatchers(angular.element(childElement)));
+    });
+    return watchers;
+  }
+
+  function getWatchersFromScope(scope) {
+    if (scope) {
+      return scope.$$watchers || [];
+    } else {
+      return [];
+    }
+  }
+
+  return getElemWatchers(root);
+}
+
+}}}

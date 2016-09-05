@@ -1,4 +1,10 @@
 
+:Naming_Convention:
+1. 方法名必须是动词或动词短语
+
+:Utils:Wireshark
+https://www.wireshark.org/docs/wsug_html_chunked/index.html
+
 - String digest algorithm
 - ETCD Browser: http://henszey.github.io/etcd-browser/
 
@@ -11,4 +17,39 @@ http://www.one-story.cn/nazopuzzle/Pac-Man.html
 
 === Living Fossils 活化石 ===
 
-- Horseshoe Crab 鲎 四亿五千万年前出现的生物 https://en.wikipedia.org/wiki/Horseshoe_crab 
+- Horseshoe Crab 鲎 四亿五千万年前出现的生物 https://en.wikipedia.org/wiki/Horseshoe_crab
+- 三眼恐龙虾，小时候好像在稻田看到过
+
+
+1. Count lines: `wc -l <filepath>`
+2. Convert .mov to .mp4 `ffmpeg -i movie.mov -vcodec copy -acodec copy out.mp4`
+3. Firefox history releases: https://ftp.mozilla.org/pub/firefox/releases/
+4. CentOS time sync: `yum install ntp && chkconfig ntpd on`
+5. CentOS sync time immediately: `ntpdate time.apple.com`
+6. UML Diagram: `http://plantuml.com/`
+7. Node read file:
+
+angular 中验证 input 输入的内容时，如果input 的 type 属性是 email，此时，如果 input 的内容不符合input 标签对 email 格式的检查，是不会把 input 输入框的内容反射到 input 标签绑定的 ng-model 上的。推荐的做法是 input 尽量统一使用 type="text"，然后自行实现对内容的验证以及错误处理
+
+
+git commit
+
+commit message 里不要写你做了什么，而是要写为什么要这么做，解决了什么问题. 写好 git commit message 的一个方式是，make a commit
+时想好这些内容怎样体现在 changelog 中
+
+git commits between tags:
+
+
+ESLINT
+
+no-unused-vars 有时候我想定义一个全局变量，但是只在函数内调用。这时候 eslint 会报这个错误。
+
+
+# VIM Profilling
+# :profile start profile.log
+# :profile func *
+# :profile file *
+# " At this point do slow actions
+# :profile pause
+# :noautocmd qall!
+
