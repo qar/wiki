@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <link rel="Stylesheet" type="text/css" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Anran's Notes | Angular</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Angular</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
-  <div class="container">
-  
+
 <div id="ngForm"><h1 id="ngForm">ngForm</h1></div>
 
 <p>
@@ -23,11 +20,50 @@
 Implement a delay on scope watch <a href="http:&#47;&#47;stackoverflow.com&#47;questions&#47;20397253&#47;implement-a-delay-on-scope-watch">http://stackoverflow.com/questions/20397253/implement-a-delay-on-scope-watch</a>
 
 <li>
-对于 SVG 的属性 xlink:href 需要动态指定值时，这样写比较好: 
+对于 SVG 的属性 xlink:href 需要动态指定值时，这样写比较好:
     <code>&lt;use ng-href="{{ integration.Type | imageFilter:'#icon_puzzle-big' }}" xlink:href=""&gt;&lt;/use&gt;</code>
 
 </ol>
 
-  </div>
+<p>
+<span id="Recipies-angular"></span><span class="tag" id="angular">angular</span> <span id="Recipies-performance"></span><span class="tag" id="performance">performance</span>
+<a href="https:&#47;&#47;github.com&#47;Pasvaz&#47;bindonce">https://github.com/Pasvaz/bindonce</a>
+<a href="https:&#47;&#47;github.com&#47;angular&#47;batarang">https://github.com/angular/batarang</a>
+<a href="http:&#47;&#47;stackoverflow.com&#47;questions&#47;25641714&#47;angularjs-single-core-cpu-almost-100-cpu">http://stackoverflow.com/questions/25641714/angularjs-single-core-cpu-almost-100-cpu</a>
+</p>
+
+<p>
+<a href="https:&#47;&#47;medium.com&#47;@kentcdodds&#47;counting-angularjs-watchers-11c5134dc2ef#.qvc7qfus2">https://medium.com/@kentcdodds/counting-angularjs-watchers-11c5134dc2ef#.qvc7qfus2</a>
+</p>
+
+<pre class="code-format: javascript">
+
+function getWatchers(root) {
+  root = angular.element(root || document.documentElement);
+  var watcherCount = 0;
+
+  function getElemWatchers(element) {
+    var isolateWatchers = getWatchersFromScope(element.data().$isolateScope);
+    var scopeWatchers = getWatchersFromScope(element.data().$scope);
+    var watchers = scopeWatchers.concat(isolateWatchers);
+    angular.forEach(element.children(), function (childElement) {
+      watchers = watchers.concat(getElemWatchers(angular.element(childElement)));
+    });
+    return watchers;
+  }
+
+  function getWatchersFromScope(scope) {
+    if (scope) {
+      return scope.$$watchers || [];
+    } else {
+      return [];
+    }
+  }
+
+  return getElemWatchers(root);
+}
+
+</pre>
+
 </body>
 </html>

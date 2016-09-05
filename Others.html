@@ -1,15 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <link rel="Stylesheet" type="text/css" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Anran's Notes | Others</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Others</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
-  <div class="container">
-  
+
+
+<p>
+<span id="-Naming_Convention"></span><span class="tag" id="Naming_Convention">Naming_Convention</span>
+</p>
+<ol>
+<li>
+方法名必须是动词或动词短语
+
+</ol>
+
+<p>
+:Utils:Wireshark
+<a href="https:&#47;&#47;www.wireshark.org&#47;docs&#47;wsug_html_chunked&#47;index.html">https://www.wireshark.org/docs/wsug_html_chunked/index.html</a>
+</p>
 
 <ul>
 <li>
@@ -35,10 +46,89 @@ ETCD Browser: <a href="http:&#47;&#47;henszey.github.io&#47;etcd-browser&#47;">h
 
 <ul>
 <li>
-Horseshoe Crab 鲎 四亿五千万年前出现的生物 <a href="https:&#47;&#47;en.wikipedia.org&#47;wiki&#47;Horseshoe_crab">https://en.wikipedia.org/wiki/Horseshoe_crab</a> 
+Horseshoe Crab 鲎 四亿五千万年前出现的生物 <a href="https:&#47;&#47;en.wikipedia.org&#47;wiki&#47;Horseshoe_crab">https://en.wikipedia.org/wiki/Horseshoe_crab</a>
+
+<li>
+三眼恐龙虾，小时候好像在稻田看到过
 
 </ul>
 
-  </div>
+
+<ol>
+<li>
+Count lines: <code>wc -l &lt;filepath&gt;</code>
+
+<li>
+Convert .mov to .mp4 <code>ffmpeg -i movie.mov -vcodec copy -acodec copy out.mp4</code>
+
+<li>
+Firefox history releases: <a href="https:&#47;&#47;ftp.mozilla.org&#47;pub&#47;firefox&#47;releases&#47;">https://ftp.mozilla.org/pub/firefox/releases/</a>
+
+<li>
+CentOS time sync: <code>yum install ntp &amp;&amp; chkconfig ntpd on</code>
+
+<li>
+CentOS sync time immediately: <code>ntpdate time.apple.com</code>
+
+<li>
+UML Diagram: <code>http://plantuml.com/</code>
+
+<li>
+Node read file:
+
+</ol>
+
+<p>
+angular 中验证 input 输入的内容时，如果input 的 type 属性是 email，此时，如果 input 的内容不符合input 标签对 email 格式的检查，是不会把 input 输入框的内容反射到 input 标签绑定的 ng-model 上的。推荐的做法是 input 尽量统一使用 type="text"，然后自行实现对内容的验证以及错误处理
+</p>
+
+
+<p>
+git commit
+</p>
+
+<p>
+commit message 里不要写你做了什么，而是要写为什么要这么做，解决了什么问题. 写好 git commit message 的一个方式是，make a commit
+时想好这些内容怎样体现在 changelog 中
+</p>
+
+<p>
+git commits between tags:
+</p>
+
+
+<p>
+ESLINT
+</p>
+
+<p>
+no-unused-vars 有时候我想定义一个全局变量，但是只在函数内调用。这时候 eslint 会报这个错误。
+</p>
+
+
+<ol>
+<li>
+VIM Profilling
+
+<li>
+:profile start profile.log
+
+<li>
+:profile func *
+
+<li>
+:profile file *
+
+<li>
+" At this point do slow actions
+
+<li>
+:profile pause
+
+<li>
+:noautocmd qall!
+
+</ol>
+
 </body>
 </html>
