@@ -20,6 +20,9 @@ http://www.one-story.cn/nazopuzzle/Pac-Man.html
 - Horseshoe Crab 鲎 四亿五千万年前出现的生物 https://en.wikipedia.org/wiki/Horseshoe_crab
 - 三眼恐龙虾，小时候好像在稻田看到过
 
+=== 有趣的生物 ===
+- 能进行光合作用的动物 https://en.wikipedia.org/wiki/Elysia_chlorotica
+
 
 1. Count lines: `wc -l <filepath>`
 2. Convert .mov to .mp4 `ffmpeg -i movie.mov -vcodec copy -acodec copy out.mp4`
@@ -53,3 +56,7 @@ no-unused-vars 有时候我想定义一个全局变量，但是只在函数内�
 # :profile pause
 # :noautocmd qall!
 
+:vim_compile_options:
+{{{
+  ./configure --prefix=/usr/bin
+}}}

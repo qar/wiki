@@ -1,3 +1,15 @@
 # Dictionary
 
 1. 有道词典 http://dict.youdao.com
+
+:state-vs-status:
+
+    Ok, I'll tell you my two cents:
+    a state is any condition which is durable or lasting (Zustand, Istzustand) 
+    whereas a status is a classification of state among several well-defined possibilities.
+    An immigrant's status is either legal or illegal, and if he is the latter,
+    he may be in an anxious emotional state.
+    
+    http://forum.wordreference.com/threads/state-vs-status.287984/
+    http://www.ldoceonline.com/dictionary/status
+    http://www.ldoceonline.com/dictionary/state

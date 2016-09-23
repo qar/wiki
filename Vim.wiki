@@ -6,3 +6,11 @@ http://stackoverflow.com/a/5093286/2609042
 :cheetsheet:vim-cheetsheet:
 在 VIM 中格式化压缩后的 JSON 文件: `%!python -m json.tool`
 https://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
+
+:install:
+{{{
+  ./configure --prefix=/user --with-features=huge
+  make
+  sudo make install
+}}}
+vim will be install at /usr/bin/vim
