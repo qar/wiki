@@ -4,3 +4,8 @@ https://atlas.hashicorp.com/boxes/search
 
 == CentOS 7.X ==
 https://atlas.hashicorp.com/bento/boxes/centos-7.2
+
+== Issues ==
+:vagrant:nodemon:NFS:
+NFS 模式下 nodemon 无法监听到文件改动，需要加 -L 参数，但是又会造成 CPU 负载过高
+https://github.com/remy/nodemon/issues/146

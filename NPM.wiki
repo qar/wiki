@@ -4,3 +4,5 @@
 2. https://github.com/showdownjs/showdown
 3. request: https://www.npmjs.com/package/request 
 4. MySQL: https://www.npmjs.com/package/mysql
+5. multer: https://www.npmjs.com/package/multer  for handling 'multipart/form-data' only
+6. body-parser: https://www.npmjs.com/package/body-parser

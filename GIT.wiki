@@ -4,4 +4,7 @@
   http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit
   revert a commit: `git revert <commit>`
 
+git log --pretty=oneline --abbrev-commit
 
+update commits timestamp
+`git commit --amend --date="Thu Sep 29 16:12:30 2016 +0800"`

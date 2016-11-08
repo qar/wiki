@@ -4,3 +4,12 @@
 
 Douban PyPi Mirror
 `-i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com`
+
+== CheetSheet ==
+
+格式化当前时间 :datetime:
+https://docs.python.org/2/library/datetime.html
+`datetime.datetime.now().strftime('%Y-%m-%d %H:%M')`
+
+Serialize datetime object :datetime:json:serialize:
+http://stackoverflow.com/a/22238613

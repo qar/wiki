@@ -9,7 +9,7 @@ https://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
 
 :install:
 {{{
-  ./configure --prefix=/user --with-features=huge
+  ./configure --prefix=/usr --with-features=huge
   make
   sudo make install
 }}}
