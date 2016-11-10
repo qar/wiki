@@ -1,4 +1,6 @@
-== My Mem Cache ==
+%template index
+
+= Memory Dump =
 
 [[docker]]
 
