@@ -1,8 +1,6 @@
 == My Mem Cache ==
 
-[[1234]]
-
-[[use_docker]]
+[[docker]]
 
 [[JavaScript]]
 
@@ -24,15 +22,11 @@
 
 [[NPM]]
 
-[[Gulp]]
-
 [[Python]]
 
 [[Vim]]
 
 [[vimwiki]]
-
-[[RST_SYNTAX]]
 
 [[SASS]]
 
@@ -40,15 +34,7 @@
 
 [[Vagrant]]
 
-[[CodeMirror]]
-
-[[RestfulAPI]]
-
 [[English]]
-
-[[Storage]]
-
-[[Tmux]]
 
 https://github.com/robbyrussell/oh-my-zsh
 

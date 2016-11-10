@@ -1,1 +1,2 @@
-http://www.rosipov.com/blog/custom-templates-in-vimwiki
+
+Doc: https://raw.githubusercontent.com/vimwiki/vimwiki/master/doc/vimwiki.txt

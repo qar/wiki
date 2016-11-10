@@ -2,7 +2,7 @@
 
 1. http://fabfile.org
 
-Douban PyPi Mirror
+Douban PyPi Mirror :douban:
 `-i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com`
 
 == CheetSheet ==

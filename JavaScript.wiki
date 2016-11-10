@@ -1,2 +1,23 @@
-== Service Worker == 
+== Service Worker ==
 https://developers.google.com/web/fundamentals/primers/service-worker/
+
+:ajax:
+{{{class="code-javascript"
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/api/fruits/create');
+    xhr.send(JSON.stringify({
+      someKey: someValue
+    }));
+
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4) {
+        if (xhr.status === 200) {
+          // do something
+        } else {
+          // handle error
+        }
+      }
+    }
+
+}}}

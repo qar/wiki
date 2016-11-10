@@ -61,3 +61,11 @@ no-unused-vars 有时候我想定义一个全局变量，但是只在函数内�
   ./configure --prefix=/usr/bin
 }}}
 
+Let's Encrypt
+{{{class="code-bash"
+
+  service nginx stop
+  ./certbot-auto certonly --standalone -d qiaoanran.com
+  service nginx start
+  
+}}}
