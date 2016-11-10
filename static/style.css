@@ -1,0 +1,4 @@
+body {
+  /* overwrite bootstrap font settings */
+  font-family: "Avenir-Medium","AvenirLTStd-Medium","HanHei SC","PingHei","PingFang SC","STHeitiSC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
+}

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="Stylesheet" type="text/css" href="style.css">
-<title>Others</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="Stylesheet" type="text/css" href="static/bootstrap.min.css">
+  <link rel="Stylesheet" type="text/css" href="static/style.css">
+  <title>Anran's Note - Others</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
-
+  <div class="container">
+    
 
 <p>
 <span id="-Naming_Convention"></span><span class="tag" id="Naming_Convention">Naming_Convention</span>
@@ -50,6 +52,13 @@ Horseshoe Crab 鲎 四亿五千万年前出现的生物 <a href="https:&#47;&#47
 
 <li>
 三眼恐龙虾，小时候好像在稻田看到过
+
+</ul>
+
+<div id="有趣的生物"><h3 id="有趣的生物">有趣的生物</h3></div>
+<ul>
+<li>
+能进行光合作用的动物 <a href="https:&#47;&#47;en.wikipedia.org&#47;wiki&#47;Elysia_chlorotica">https://en.wikipedia.org/wiki/Elysia_chlorotica</a>
 
 </ul>
 
@@ -130,5 +139,24 @@ VIM Profilling
 
 </ol>
 
+<p>
+<span id="有趣的生物-vim_compile_options"></span><span class="tag" id="vim_compile_options">vim_compile_options</span>
+</p>
+<pre>
+  ./configure --prefix=/usr/bin
+</pre>
+
+<p>
+Let's Encrypt
+</p>
+<pre class="code-bash">
+
+  service nginx stop
+  ./certbot-auto certonly --standalone -d qiaoanran.com
+  service nginx start
+  
+</pre>
+
+  </div>
 </body>
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="Stylesheet" type="text/css" href="static/bootstrap.min.css">
+  <link rel="Stylesheet" type="text/css" href="static/style.css">
+  <title>Anran's Note - JavaScript</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+  <div class="container">
+    
+<div id="Service Worker"><h2 id="Service Worker">Service Worker</h2></div>
+<p>
+<a href="https:&#47;&#47;developers.google.com&#47;web&#47;fundamentals&#47;primers&#47;service-worker&#47;">https://developers.google.com/web/fundamentals/primers/service-worker/</a>
+</p>
+
+<p>
+<span id="Service Worker-ajax"></span><span class="tag" id="ajax">ajax</span>
+</p>
+<pre class="code-javascript">
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/api/fruits/create');
+    xhr.send(JSON.stringify({
+      someKey: someValue
+    }));
+
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4) {
+        if (xhr.status === 200) {
+          // do something
+        } else {
+          // handle error
+        }
+      }
+    }
+
+</pre>
+
+  </div>
+</body>
+</html>
