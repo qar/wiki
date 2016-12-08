@@ -1,0 +1,17 @@
+- right/left align element in div
+{{{class="lang-css"
+
+display: flex;
+justify-content: space-between;
+
+}}}
+  
+- vertically align text inside a flexbox
+{{{class="lang-css"
+
+display: flex;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+
+}}}

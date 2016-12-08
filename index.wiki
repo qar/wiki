@@ -2,6 +2,8 @@
 
 = Memory Dump =
 
+[[games]]
+
 [[docker]]
 
 [[JavaScript]]
@@ -16,7 +18,7 @@
 
 [[OPS]]
 
-[[Git]]
+[[./git2|Git]]
 
 [[Angular]]
 
@@ -39,6 +41,10 @@
 [[English]]
 
 https://github.com/robbyrussell/oh-my-zsh
+
+[[mysql]]
+
+[[css]]
 
 [[Others]]
 

@@ -14,3 +14,5 @@ https://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
   sudo make install
 }}}
 vim will be install at /usr/bin/vim
+
+- incremental number sequence: http://stackoverflow.com/questions/9903660/vi-how-to-generate-a-number-sequence

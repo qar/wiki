@@ -69,3 +69,10 @@ Let's Encrypt
   service nginx start
   
 }}}
+
+:Gmail:
+利用 Gmail 的别名功能给邮件分类
+比如发往 `xxx+abc.def@gmail.com` 的邮件会进入 `xxx@gmail.com` 的收件箱。
+利用这个功能可以给邮件分类。比如注册 1Password 时使用 `xxx+apps.1password@gmail.com` 注册,
+在邮件客户端创建一条新规则，将收件人是 `xxx+apps.1password@gmail.com` 的邮件统统移到 `Gmail/应用/1Password` 目录下
+

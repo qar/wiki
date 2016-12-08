@@ -8,3 +8,10 @@ git log --pretty=oneline --abbrev-commit
 
 update commits timestamp
 `git commit --amend --date="Thu Sep 29 16:12:30 2016 +0800"`
+
+- redo last commit: `git reset HEAD~`
+
+-----
+
+Find the first commit: `git rev-list --max-parents=0 HEAD`
+http://stackoverflow.com/questions/5188914/how-to-show-first-commit-by-git-log
