@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Memory Dump - GIT</title>
+  <title>Memory Dump - git</title>
   <link rel="Stylesheet" type="text/css" href="static/bootstrap.min.css">
   <link rel="Stylesheet" type="text/css" href="static/style.css">
 </head>
@@ -27,6 +27,19 @@ git log --pretty=oneline --abbrev-commit
 <p>
 update commits timestamp
 <code>git commit --amend --date="Thu Sep 29 16:12:30 2016 +0800"</code>
+</p>
+
+<ul>
+<li>
+redo last commit: <code>git reset HEAD~</code>
+
+</ul>
+
+<hr />
+
+<p>
+Find the first commit: <code>git rev-list --max-parents=0 HEAD</code>
+<a href="http:&#47;&#47;stackoverflow.com&#47;questions&#47;5188914&#47;how-to-show-first-commit-by-git-log">http://stackoverflow.com/questions/5188914/how-to-show-first-commit-by-git-log</a>
 </p>
 
   </div>
