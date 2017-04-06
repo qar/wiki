@@ -1,2 +1,12 @@
 
 Doc: https://raw.githubusercontent.com/vimwiki/vimwiki/master/doc/vimwiki.txt
+
+= Cheet Sheet =
+
+{{{
+<Leader>wd              Delete wiki page you are in.
+                        Maps to |:VimwikiDeleteLink|.
+                        To remap: >
+                        :nmap <Leader>dd <Plug>VimwikiDeleteLink
+
+}}}

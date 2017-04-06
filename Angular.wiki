@@ -43,3 +43,16 @@ function getWatchers(root) {
 }
 
 }}}
+
+----
+:angular:input:number:allowInvalid:
+使用 `<input type="number" ng-model="v" min=1>` 时，如果在 UI 上输入 0，那么 `v` 的值将会是 `undefined`。
+这是因为输入值不满足 `min=1` 的限制要求。要突破这个限制，可以加上 `ng-model-options="{ allowInvalid: true }"`
+
+----
+:ui-router:
+https://ui-router.github.io/ng1/docs/1.0.0-alpha.5
+http://stackoverflow.com/questions/17001589/directing-the-user-to-a-child-state-when-they-are-transitioning-to-its-parent-st
+`onBefore` 的 callback 必须接收 `$transition$` 依赖才能正常工作, 使用 `$transition$.get()` 可以获得当前 state, 使用 `$transition$.params()` 可以获得对应的路由参数
+手动路由跳转时如何忽略参数等 https://github.com/angular-ui/ui-router/issues/613
+禁止将参数解析成 Array 类型 https://ui-router.github.io/ng1/docs/latest/interfaces/params.paramdeclaration.html#array

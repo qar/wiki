@@ -1,7 +1,5 @@
 %template index
 
-= Memory Dump =
-
 [[games]]
 
 [[docker]]
@@ -18,7 +16,7 @@
 
 [[OPS]]
 
-[[./git2|Git]]
+[[./git|Git]]
 
 [[Angular]]
 
@@ -42,10 +40,14 @@
 
 https://github.com/robbyrussell/oh-my-zsh
 
+[[zsh]]
+
+[[http]]
+
 [[mysql]]
 
 [[css]]
 
 [[Others]]
 
-
+[[vagrant]]

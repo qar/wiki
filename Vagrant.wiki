@@ -9,3 +9,7 @@ https://atlas.hashicorp.com/bento/boxes/centos-7.2
 :vagrant:nodemon:NFS:
 NFS 模式下 nodemon 无法监听到文件改动，需要加 -L 参数，但是又会造成 CPU 负载过高
 https://github.com/remy/nodemon/issues/146
+
+
+vagrant 1.8.4 does not work with virtualbox 5.1.*
+https://github.com/mitchellh/vagrant/issues/7767

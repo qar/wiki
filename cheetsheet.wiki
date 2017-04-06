@@ -1,0 +1,1 @@
+resize splits http://vi.stackexchange.com/questions/514/how-to-change-the-current-splits-width-and-height

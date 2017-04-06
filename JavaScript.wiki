@@ -21,3 +21,22 @@ https://developers.google.com/web/fundamentals/primers/service-worker/
     }
 
 }}}
+
+= common webpack questions =
+https://github.com/webpack/webpack-dev-server/issues/377
+```
+you should not use [chunkhash] or [hash] for development. This will cause many other issues, like a memory leak, because the dev server does not know when to clean up the old files.
+```
+
+
+http://stackoverflow.com/questions/34930771/why-is-this-undefined-inside-class-method-when-using-promises
+
+== webpack ==
+
+https://github.com/webpack/webpack/issues/1151
+Just use `webpack-dev-server --hot --inline` and don't anything special about webpack-dev-server or HMR to your webpack.config.js.
+
+----
+
+:promise:
+promise rejection: http://2ality.com/2016/03/promise-rejections-vs-exceptions.html

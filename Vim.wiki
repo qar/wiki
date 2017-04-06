@@ -16,3 +16,22 @@ https://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
 vim will be install at /usr/bin/vim
 
 - incremental number sequence: http://stackoverflow.com/questions/9903660/vi-how-to-generate-a-number-sequence
+
+vsp open file from relative path: `:expand('%')`
+
+:markdown:table:align:
+https://github.com/junegunn/vim-easy-align
+
+----
+[[cheetsheet]]
+
+= Learn Vimscript the hard way =
+
+== Chapter 1 ==
+
+- `echo` and `echom` command
+- use `"` to comment a line, but it doesn't always work. 
+- use `!` postfix to toggle a boolean option
+- `:set <name>=<value>` set options with values
+- use `?` postfix to check what an option is set [[to]]  
+- you can set multiple options in one line

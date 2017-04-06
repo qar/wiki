@@ -6,3 +6,9 @@
 4. MySQL: https://www.npmjs.com/package/mysql
 5. multer: https://www.npmjs.com/package/multer  for handling 'multipart/form-data' only
 6. body-parser: https://www.npmjs.com/package/body-parser
+7. http proxy middleware: https://www.npmjs.com/package/http-proxy-middleware
+
+= 常用的操作 =
+
+1. 获取当前安装的包的版本: http://stackoverflow.com/questions/10972176/find-the-version-of-an-installed-npm-package
+   `npm list` for local packages or `npm list -g` for global installed packages.

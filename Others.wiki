@@ -1,4 +1,8 @@
 
+Mac force to quit app:
+`Command + Option + ESC`
+
+
 :Naming_Convention:
 1. 方法名必须是动词或动词短语
 
@@ -31,6 +35,10 @@ http://www.one-story.cn/nazopuzzle/Pac-Man.html
 5. CentOS sync time immediately: `ntpdate time.apple.com`
 6. UML Diagram: `http://plantuml.com/`
 7. Node read file:
+
+
+:ffmepg:gif:
+http://superuser.com/questions/436056/how-can-i-get-ffmpeg-to-convert-a-mov-to-a-gif
 
 angular 中验证 input 输入的内容时，如果input 的 type 属性是 email，此时，如果 input 的内容不符合input 标签对 email 格式的检查，是不会把 input 输入框的内容反射到 input 标签绑定的 ng-model 上的。推荐的做法是 input 尽量统一使用 type="text"，然后自行实现对内容的验证以及错误处理
 
@@ -75,4 +83,34 @@ Let's Encrypt
 比如发往 `xxx+abc.def@gmail.com` 的邮件会进入 `xxx@gmail.com` 的收件箱。
 利用这个功能可以给邮件分类。比如注册 1Password 时使用 `xxx+apps.1password@gmail.com` 注册,
 在邮件客户端创建一条新规则，将收件人是 `xxx+apps.1password@gmail.com` 的邮件统统移到 `Gmail/应用/1Password` 目录下
+
+
+:emoji:
+Open emoji input dialog on macOS: `Command + Control + Space`
+
+macOS Recover user password:
+https://itcrush.wordpress.com/2012/04/23/how-to-bypass-mac-os-x-login-password/
+
+placeholder image service:
+https://unsplash.it/
+
+:SEO:ga:
+https://www.ohow.co/ultimate-guide-to-removing-irrelevant-traffic-in-google-analytics/
+
+git get latest tag
+`git describe --tags $(git rev-list --tags --max-count=1)`
+
+:xz: uncompress .xz files
+`xz -d file-name.xz`
+
+:json:
+http://www.json.org/
+
+:chrome:
+可以使用调试器中的 Blackbox 功能忽略指定的脚本文件（比如库文件）
+
+----
+:crontab:
+https://crontab.guru/
+the quick and simple editor for cron schedule expressions.
 

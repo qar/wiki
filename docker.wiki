@@ -33,3 +33,17 @@ References:
 
 :etcd_browser:
 http://henszey.github.io/etcd-browser/
+
+enter running container
+`docker exec -it [container-id] bash`
+
+:docker:mysql:storage:
+`docker run --name <Container-Name> -p 0.0.0.0:12345:3306  -e MYSQL_ROOT_PASSWORD=root -d mysql:latest`
+`mysql --user <User> --host <Host> --port <Port>`
+
+:docker:danglingimages:
+http://www.projectatomic.io/blog/2015/07/what-are-docker-none-none-images/
+
+----
+:constraints:
+https://github.com/docker/docker/blob/master/vendor/github.com/docker/swarmkit/manager/constraint/constraint.go#L107
