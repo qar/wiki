@@ -1,4 +1,75 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
-  /* overwrite bootstrap font settings */
-  font-family: "Avenir-Medium","AvenirLTStd-Medium","HanHei SC","PingHei","PingFang SC","STHeitiSC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
+    /* overwrite bootstrap font settings */
+    font-family: "Avenir-Medium","AvenirLTStd-Medium","HanHei SC","PingHei","PingFang SC","STHeitiSC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+    min-height: 100%;
+    position: relative;
+    height: auto !important;
+    box-sizing: border-box;
+    padding-bottom: 60px; /* GAP_HEIGHT + FOOTER_HEIGHT */
+}
+
+h1, .h1 {
+    font-size: 22px;
+}
+
+h2, .h2 {
+    font-size: 18px;
+}
+
+pre {
+  border-radius: 0;
+}
+
+.site-header {
+    padding: 10px 0;
+    height: 66px;
+}
+
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.site-caption {
+    display: inline-block;
+    width: auto;
+    padding: 0 14px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    vertical-align: middle;
+    line-height: 46px;
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+
+a.site-caption:hover {
+    text-decoration: none;
+    color: #fff;
+}
+a.site-caption:visited {
+    color: #fff;
+}
+a.site-caption:focus {
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.main-content {
+    padding-top: 24px;
+}
+
+.main-content:before {
+    content: '',
 }

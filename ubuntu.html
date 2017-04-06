@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html> <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -10,8 +9,15 @@
   <link rel="Stylesheet" type="text/css" href="static/style.css">
 </head>
 <body>
-  <div class="container">
-    
+  <div class="site-header">
+    <div class="container">
+      <a class="site-caption" href="/" title="Memory Dump">Memory Dump</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="container">
+      
 <ol>
 <li>
 restarting networking: <code>sudo /etc/init.d/networking restart</code>
@@ -19,8 +25,18 @@ restarting networking: <code>sudo /etc/init.d/networking restart</code>
 <li>
 start on boot: <code>sudo update-rc.d &lt;service-name&gt; disable|enable</code>
 
+<li>
+install ssh: <code>sudo apt-get install openssh-server openssh-client</code>
+
 </ol>
 
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="container">
+        &copy; memory dump 2017
+    </div>
   </div>
 </body>
 </html>

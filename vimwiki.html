@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html> <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -10,13 +9,37 @@
   <link rel="Stylesheet" type="text/css" href="static/style.css">
 </head>
 <body>
-  <div class="container">
-    
+  <div class="site-header">
+    <div class="container">
+      <a class="site-caption" href="/" title="Memory Dump">Memory Dump</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="container">
+      
 
 <p>
 Doc: <a href="https:&#47;&#47;raw.githubusercontent.com&#47;vimwiki&#47;vimwiki&#47;master&#47;doc&#47;vimwiki.txt">https://raw.githubusercontent.com/vimwiki/vimwiki/master/doc/vimwiki.txt</a>
 </p>
 
+<div id="Cheet Sheet"><h1 id="Cheet Sheet">Cheet Sheet</h1></div>
+
+<pre>
+&lt;Leader&gt;wd              Delete wiki page you are in.
+                        Maps to |:VimwikiDeleteLink|.
+                        To remap: &gt;
+                        :nmap &lt;Leader&gt;dd &lt;Plug&gt;VimwikiDeleteLink
+
+</pre>
+
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="container">
+        &copy; memory dump 2017
+    </div>
   </div>
 </body>
 </html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html> <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -10,8 +9,15 @@
   <link rel="Stylesheet" type="text/css" href="static/style.css">
 </head>
 <body>
-  <div class="container">
-    
+  <div class="site-header">
+    <div class="container">
+      <a class="site-caption" href="/" title="Memory Dump">Memory Dump</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="container">
+      
 
 <div id="Documents"><h2 id="Documents">Documents</h2></div>
 <p>
@@ -88,6 +94,35 @@ References:
 <a href="http:&#47;&#47;henszey.github.io&#47;etcd-browser&#47;">http://henszey.github.io/etcd-browser/</a>
 </p>
 
+<p>
+enter running container
+<code>docker exec -it [container-id] bash</code>
+</p>
+
+<p>
+<span id="Docker 1.12 Questions-Which mode is the default mode ? vip or dnsrr ?-docker"></span><span class="tag" id="docker">docker</span> <span id="Docker 1.12 Questions-Which mode is the default mode ? vip or dnsrr ?-mysql"></span><span class="tag" id="mysql">mysql</span> <span id="Docker 1.12 Questions-Which mode is the default mode ? vip or dnsrr ?-storage"></span><span class="tag" id="storage">storage</span>
+<code>docker run --name &lt;Container-Name&gt; -p 0.0.0.0:12345:3306  -e MYSQL_ROOT_PASSWORD=root -d mysql:latest</code>
+<code>mysql --user &lt;User&gt; --host &lt;Host&gt; --port &lt;Port&gt;</code>
+</p>
+
+<p>
+<span id="Docker 1.12 Questions-Which mode is the default mode ? vip or dnsrr ?-docker"></span><span class="tag" id="docker">docker</span> <span id="Docker 1.12 Questions-Which mode is the default mode ? vip or dnsrr ?-danglingimages"></span><span class="tag" id="danglingimages">danglingimages</span>
+<a href="http:&#47;&#47;www.projectatomic.io&#47;blog&#47;2015&#47;07&#47;what-are-docker-none-none-images&#47;">http://www.projectatomic.io/blog/2015/07/what-are-docker-none-none-images/</a>
+</p>
+
+<hr />
+<p>
+<span id="Docker 1.12 Questions-Which mode is the default mode ? vip or dnsrr ?-constraints"></span><span class="tag" id="constraints">constraints</span>
+<a href="https:&#47;&#47;github.com&#47;docker&#47;docker&#47;blob&#47;master&#47;vendor&#47;github.com&#47;docker&#47;swarmkit&#47;manager&#47;constraint&#47;constraint.go#L107">https://github.com/docker/docker/blob/master/vendor/github.com/docker/swarmkit/manager/constraint/constraint.go#L107</a>
+</p>
+
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="container">
+        &copy; memory dump 2017
+    </div>
   </div>
 </body>
 </html>

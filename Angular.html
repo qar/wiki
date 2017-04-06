@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html> <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -10,8 +9,15 @@
   <link rel="Stylesheet" type="text/css" href="static/style.css">
 </head>
 <body>
-  <div class="container">
-    
+  <div class="site-header">
+    <div class="container">
+      <a class="site-caption" href="/" title="Memory Dump">Memory Dump</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="container">
+      
 <div id="ngForm"><h1 id="ngForm">ngForm</h1></div>
 
 <p>
@@ -70,6 +76,30 @@ function getWatchers(root) {
 
 </pre>
 
+<hr />
+<p>
+<span id="Recipies-angular"></span><span class="tag" id="angular">angular</span> <span id="Recipies-input"></span><span class="tag" id="input">input</span> <span id="Recipies-number"></span><span class="tag" id="number">number</span> <span id="Recipies-allowInvalid"></span><span class="tag" id="allowInvalid">allowInvalid</span>
+使用 <code>&lt;input type="number" ng-model="v" min=1&gt;</code> 时，如果在 UI 上输入 0，那么 <code>v</code> 的值将会是 <code>undefined</code>。
+这是因为输入值不满足 <code>min=1</code> 的限制要求。要突破这个限制，可以加上 <code>ng-model-options="{ allowInvalid: true }"</code>
+</p>
+
+<hr />
+<p>
+<span id="Recipies-ui-router"></span><span class="tag" id="ui-router">ui-router</span>
+<a href="https:&#47;&#47;ui-router.github.io&#47;ng1&#47;docs&#47;1.0.0-alpha.5">https://ui-router.github.io/ng1/docs/1.0.0-alpha.5</a>
+<a href="http:&#47;&#47;stackoverflow.com&#47;questions&#47;17001589&#47;directing-the-user-to-a-child-state-when-they-are-transitioning-to-its-parent-st">http://stackoverflow.com/questions/17001589/directing-the-user-to-a-child-state-when-they-are-transitioning-to-its-parent-st</a>
+<code>onBefore</code> 的 callback 必须接收 <code>\(transition\)</code> 依赖才能正常工作, 使用 <code>\(transition\).get()</code> 可以获得当前 state, 使用 <code>\(transition\).params()</code> 可以获得对应的路由参数
+手动路由跳转时如何忽略参数等 <a href="https:&#47;&#47;github.com&#47;angular-ui&#47;ui-router&#47;issues&#47;613">https://github.com/angular-ui/ui-router/issues/613</a>
+禁止将参数解析成 Array 类型 <a href="https:&#47;&#47;ui-router.github.io&#47;ng1&#47;docs&#47;latest&#47;interfaces&#47;params.paramdeclaration.html#array">https://ui-router.github.io/ng1/docs/latest/interfaces/params.paramdeclaration.html#array</a>
+</p>
+
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="container">
+        &copy; memory dump 2017
+    </div>
   </div>
 </body>
 </html>

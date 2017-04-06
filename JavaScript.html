@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html> <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -10,8 +9,15 @@
   <link rel="Stylesheet" type="text/css" href="static/style.css">
 </head>
 <body>
-  <div class="container">
-    
+  <div class="site-header">
+    <div class="container">
+      <a class="site-caption" href="/" title="Memory Dump">Memory Dump</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="container">
+      
 <div id="Service Worker"><h2 id="Service Worker">Service Worker</h2></div>
 <p>
 <a href="https:&#47;&#47;developers.google.com&#47;web&#47;fundamentals&#47;primers&#47;service-worker&#47;">https://developers.google.com/web/fundamentals/primers/service-worker/</a>
@@ -40,6 +46,40 @@
 
 </pre>
 
+<div id="common webpack questions"><h1 id="common webpack questions">common webpack questions</h1></div>
+<p>
+<a href="https:&#47;&#47;github.com&#47;webpack&#47;webpack-dev-server&#47;issues&#47;377">https://github.com/webpack/webpack-dev-server/issues/377</a>
+```
+you should not use [chunkhash] or [hash] for development. This will cause many other issues, like a memory leak, because the dev server does not know when to clean up the old files.
+```
+</p>
+
+
+<p>
+<a href="http:&#47;&#47;stackoverflow.com&#47;questions&#47;34930771&#47;why-is-this-undefined-inside-class-method-when-using-promises">http://stackoverflow.com/questions/34930771/why-is-this-undefined-inside-class-method-when-using-promises</a>
+</p>
+
+<div id="common webpack questions-webpack"><h2 id="webpack">webpack</h2></div>
+
+<p>
+<a href="https:&#47;&#47;github.com&#47;webpack&#47;webpack&#47;issues&#47;1151">https://github.com/webpack/webpack/issues/1151</a>
+Just use <code>webpack-dev-server --hot --inline</code> and don't anything special about webpack-dev-server or HMR to your webpack.config.js.
+</p>
+
+<hr />
+
+<p>
+<span id="common webpack questions-webpack-promise"></span><span class="tag" id="promise">promise</span>
+promise rejection: <a href="http:&#47;&#47;2ality.com&#47;2016&#47;03&#47;promise-rejections-vs-exceptions.html">http://2ality.com/2016/03/promise-rejections-vs-exceptions.html</a>
+</p>
+
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="container">
+        &copy; memory dump 2017
+    </div>
   </div>
 </body>
 </html>
