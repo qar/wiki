@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html> <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Memory Dump - TypeScript</title>
+  <link rel="Stylesheet" type="text/css" href="static/bootstrap.min.css">
+  <link rel="Stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+  <div class="site-header">
+    <div class="container">
+      <a class="site-caption" href="/" title="Memory Dump">Memory Dump</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="container">
+      
+<div id="Questions"><h2 id="Questions">Questions</h2></div>
+
+<p>
+If you specify input files, tsconfig.json is ignored.
+Check out <a href="https:&#47;&#47;github.com&#47;Microsoft&#47;TypeScript&#47;wiki&#47;tsconfig.json">https://github.com/Microsoft/TypeScript/wiki/tsconfig.json</a>  for more info on tsconfig.json.
+</p>
+
+<p>
+@types/core-js versin issue
+<a href="https:&#47;&#47;github.com&#47;Lemoncode&#47;lcFormValidation&#47;commit&#47;ee2b9d739ef5a61d68dbcb37ebea8c35a717a69e">https://github.com/Lemoncode/lcFormValidation/commit/ee2b9d739ef5a61d68dbcb37ebea8c35a717a69e</a>
+</p>
+
+<p>
+TS2304: Cannot find name 'Map'.
+Solution: install <code>@types/core-js@0.9.36</code>
+</p>
+
+
+<p>
+Errors like:
+error TS2687: All declarations of 'value' must have identical modifiers.
+error TS2687: All declarations of 'prototype' must have identical modifiers.
+error TS2344: Type 'K' does not satisfy the constraint 'object'.
+error TS2687: All declarations of '[Symbol.toStringTag]' must have identical modifiers.
+Solution:  in tsconfig.json
+change
+```
+</p>
+<blockquote>
+"lib": [ "es2015", "dom" ],
+"types": [
+"core-js"
+],
+</blockquote>
+<p>
+```
+to
+```
+</p>
+<blockquote>
+"lib": [ "es5", "dom" ],
+"types": [
+"core-js"
+],
+</blockquote>
+<p>
+```
+```
+Because: core-js and es6 both are providing es6 type definitions and they're conflicting
+</p>
+
+<p>
+```
+Uncaught TypeError: Cannot read property 'apply' of undefined zone.js
+```
+<a href="https:&#47;&#47;github.com&#47;angular&#47;angular-cli&#47;issues&#47;6036">https://github.com/angular/angular-cli/issues/6036</a>
+Solution: use <code>zone.js@0.8.5</code> can solve this problem.
+</p>
+
+<hr />
+<p>
+<a href="http:&#47;&#47;stackoverflow.com&#47;questions&#47;39020022&#47;angular-2-unit-tests-cannot-find-name-describe">http://stackoverflow.com/questions/39020022/angular-2-unit-tests-cannot-find-name-describe</a>
+</p>
+
+<hr />
+<p>
+<a href="http:&#47;&#47;stackoverflow.com&#47;questions&#47;40699593&#47;cannot-read-property-injector-of-null-jasmine-angular-2">http://stackoverflow.com/questions/40699593/cannot-read-property-injector-of-null-jasmine-angular-2</a>
+</p>
+
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="container">
+        &copy; memory dump 2017
+    </div>
+  </div>
+</body>
+</html>

@@ -18,6 +18,11 @@
   <div class="main-content">
     <div class="container">
       
+<p>
+<a href="http:&#47;&#47;2ality.com&#47;">http://2ality.com/</a> JavaScript and more
+<a href="http:&#47;&#47;exploringjs.com&#47;es6&#47;index.html#toc_ch_about-es6">http://exploringjs.com/es6/index.html#toc_ch_about-es6</a> Exploring ES6
+</p>
+
 <div id="Service Worker"><h2 id="Service Worker">Service Worker</h2></div>
 <p>
 <a href="https:&#47;&#47;developers.google.com&#47;web&#47;fundamentals&#47;primers&#47;service-worker&#47;">https://developers.google.com/web/fundamentals/primers/service-worker/</a>
@@ -72,6 +77,24 @@ Just use <code>webpack-dev-server --hot --inline</code> and don't anything speci
 <span id="common webpack questions-webpack-promise"></span><span class="tag" id="promise">promise</span>
 promise rejection: <a href="http:&#47;&#47;2ality.com&#47;2016&#47;03&#47;promise-rejections-vs-exceptions.html">http://2ality.com/2016/03/promise-rejections-vs-exceptions.html</a>
 </p>
+
+<hr />
+<p>
+<span id="common webpack questions-webpack-jasmine"></span><span class="tag" id="jasmine">jasmine</span> <span id="common webpack questions-webpack-global.process.listeners"></span><span class="tag" id="global.process.listeners">global.process.listeners</span>
+使用 jasmine 2.6.0 会报 <code>global.process.listeners is not a function </code> 错误
+我搭建了一个环境试图在浏览器重现这个问题但是失败了：<a href="https:&#47;&#47;jsbin.com&#47;fukeguq">https://jsbin.com/fukeguq</a>
+查看源代码发现问题应该在这里：<a href="https:&#47;&#47;github.com&#47;jasmine&#47;jasmine&#47;blob&#47;v2.6.0&#47;lib&#47;jasmine-core&#47;jasmine.js#L2179-L2180">https://github.com/jasmine/jasmine/blob/v2.6.0/lib/jasmine-core/jasmine.js#L2179-L2180</a>
+在浏览器环境下 global.process.listeners 对象是 undefined
+</p>
+
+<div id="common webpack questions-eslint"><h2 id="eslint">eslint</h2></div>
+
+<div id="common webpack questions-eslint-useful trick."><h4 id="useful trick.">useful trick.</h4></div>
+<ol>
+<li>
+eslint --print-config &lt;path&gt; Print the configuration for the given file
+
+</ol>
 
     </div>
   </div>
