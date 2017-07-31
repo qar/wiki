@@ -1,0 +1,47 @@
+== Questions ==
+
+If you specify input files, tsconfig.json is ignored.
+Check out https://github.com/Microsoft/TypeScript/wiki/tsconfig.json  for more info on tsconfig.json.
+
+@types/core-js versin issue
+https://github.com/Lemoncode/lcFormValidation/commit/ee2b9d739ef5a61d68dbcb37ebea8c35a717a69e
+
+TS2304: Cannot find name 'Map'.
+Solution: install `@types/core-js@0.9.36`
+
+
+Errors like:
+error TS2687: All declarations of 'value' must have identical modifiers.
+error TS2687: All declarations of 'prototype' must have identical modifiers.
+error TS2344: Type 'K' does not satisfy the constraint 'object'.
+error TS2687: All declarations of '[Symbol.toStringTag]' must have identical modifiers.
+Solution:  in tsconfig.json
+change
+```
+    "lib": [ "es2015", "dom" ],
+    "types": [
+      "core-js"
+    ],
+```
+to
+```
+    "lib": [ "es5", "dom" ],
+    "types": [
+      "core-js"
+    ],
+```
+```
+Because: core-js and es6 both are providing es6 type definitions and they're conflicting
+
+```
+Uncaught TypeError: Cannot read property 'apply' of undefined zone.js
+```
+https://github.com/angular/angular-cli/issues/6036
+Solution: use `zone.js@0.8.5` can solve this problem.
+
+----
+http://stackoverflow.com/questions/39020022/angular-2-unit-tests-cannot-find-name-describe
+
+----
+http://stackoverflow.com/questions/40699593/cannot-read-property-injector-of-null-jasmine-angular-2
+

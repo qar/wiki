@@ -17,6 +17,7 @@ vim will be install at /usr/bin/vim
 
 - incremental number sequence: http://stackoverflow.com/questions/9903660/vi-how-to-generate-a-number-sequence
 
+
 vsp open file from relative path: `:expand('%')`
 
 :markdown:table:align:
@@ -35,3 +36,7 @@ https://github.com/junegunn/vim-easy-align
 - `:set <name>=<value>` set options with values
 - use `?` postfix to check what an option is set [[to]]  
 - you can set multiple options in one line
+
+
+:resize splits:
+`ctrl-w <` , `ctrl-w >`, `ctrl-w =`

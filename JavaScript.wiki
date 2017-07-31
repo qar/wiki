@@ -1,3 +1,6 @@
+http://2ality.com/ JavaScript and more
+http://exploringjs.com/es6/index.html#toc_ch_about-es6 Exploring ES6
+
 == Service Worker ==
 https://developers.google.com/web/fundamentals/primers/service-worker/
 
@@ -40,3 +43,15 @@ Just use `webpack-dev-server --hot --inline` and don't anything special about we
 
 :promise:
 promise rejection: http://2ality.com/2016/03/promise-rejections-vs-exceptions.html
+
+----
+:jasmine:global.process.listeners:
+使用 jasmine 2.6.0 会报 `global.process.listeners is not a function ` 错误
+我搭建了一个环境试图在浏览器重现这个问题但是失败了：https://jsbin.com/fukeguq
+查看源代码发现问题应该在这里：https://github.com/jasmine/jasmine/blob/v2.6.0/lib/jasmine-core/jasmine.js#L2179-L2180
+在浏览器环境下 global.process.listeners 对象是 undefined
+
+== eslint ==
+
+==== useful trick. ====
+1. eslint --print-config <path> Print the configuration for the given file

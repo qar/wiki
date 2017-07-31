@@ -56,3 +56,17 @@ http://stackoverflow.com/questions/17001589/directing-the-user-to-a-child-state-
 `onBefore` 的 callback 必须接收 `$transition$` 依赖才能正常工作, 使用 `$transition$.get()` 可以获得当前 state, 使用 `$transition$.params()` 可以获得对应的路由参数
 手动路由跳转时如何忽略参数等 https://github.com/angular-ui/ui-router/issues/613
 禁止将参数解析成 Array 类型 https://ui-router.github.io/ng1/docs/latest/interfaces/params.paramdeclaration.html#array
+
+== Angular 4 ==
+`ngOnInit` called twice
+
+```
+In my @NgModule decorator’s metadata object ,I was passing ‘child component’ in the bootstap property along with ‘parent component’.
+Passing the child components in bootstap property was resetting my child components properties and making OnInit() fired twice.
+```
+[[See]]: https://github.com/angular/angular/issues/6782#issuecomment-267366857
+
+----
+
+trigger ngClick event programmatically
+http://stackoverflow.com/questions/22447374/how-to-trigger-ng-click-angularjs-programmatically

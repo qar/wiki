@@ -2,9 +2,13 @@
 
 [[games]]
 
+[[vuejs]]
+
 [[docker]]
 
 [[JavaScript]]
+
+[[TypeScript]]
 
 [[MySQL]]
 
@@ -51,3 +55,5 @@ https://github.com/robbyrussell/oh-my-zsh
 [[Others]]
 
 [[vagrant]]
+
+[[npm]]
