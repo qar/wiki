@@ -1,16 +1,16 @@
 %template index
 
 === [[./games|Games]] ===
-
 Games I loved.
 
-[[vuejs]]
+=== [[./vuejs|Vue JS]] ===
+A New User Friendly JavaScript Framework
 
-[[docker]]
+=== [[./docker|Docker]] ===
 
-[[JavaScript]]
+=== [[JavaScript]] ===
 
-[[TypeScript]]
+=== [[TypeScript]] ===
 
 [[MySQL]]
 
