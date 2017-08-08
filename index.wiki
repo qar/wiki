@@ -12,11 +12,11 @@ A New User Friendly JavaScript Framework
 
 === [[TypeScript]] ===
 
-[[MySQL]]
+=== [[MySQL]] ===
 
-[[ZSH]]
+=== [[ZSH]] ===
 
-[[LDAP]]
+=== [[LDAP]] ===
 
 [[OPS]]
 
