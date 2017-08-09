@@ -18,12 +18,12 @@
   <div class="main-content">
     <div class="container">
       
-
+<div id="Vimwiki"><h1 id="Vimwiki">Vimwiki</h1></div>
 <p>
-Doc: <a href="https:&#47;&#47;raw.githubusercontent.com&#47;vimwiki&#47;vimwiki&#47;master&#47;doc&#47;vimwiki.txt">https://raw.githubusercontent.com/vimwiki/vimwiki/master/doc/vimwiki.txt</a>
+doc: <a href="https:&#47;&#47;raw.githubusercontent.com&#47;vimwiki&#47;vimwiki&#47;master&#47;doc&#47;vimwiki.txt">https://raw.githubusercontent.com/vimwiki/vimwiki/master/doc/vimwiki.txt</a>
 </p>
 
-<div id="Cheet Sheet"><h1 id="Cheet Sheet">Cheet Sheet</h1></div>
+<div id="Vimwiki-[[Cheet]] Sheet"><h2 id="[[Cheet]] Sheet"><a href="Cheet.html">Cheet</a> Sheet</h2></div>
 
 <pre>
 &lt;Leader&gt;wd              Delete wiki page you are in.
@@ -33,47 +33,30 @@ Doc: <a href="https:&#47;&#47;raw.githubusercontent.com&#47;vimwiki&#47;vimwiki&
 
 </pre>
 
-<div id="Cheet Sheet-Automated Deploy"><h3 id="Automated Deploy">Automated Deploy</h3></div>
+<div id="Vimwiki-Automated Deploy"><h2 id="Automated Deploy">Automated Deploy</h2></div>
 
-<p>
-```
+<pre>
 #!/bin/sh
-</p>
 
-<ol>
-<li>
-Generate vimwiki and push to Github pages
+# Generate vimwiki and push to Github pages
 
-</ol>
+GIT=`which git`
+COMMIT_TIMESTAMP=`date +'%Y-%m-%d %H:%M:%S %Z'`
 
-<p>
-GIT=<code>which git</code>
-COMMIT_TIMESTAMP=<code>date +'%Y-%m-%d %H:%M:%S %Z'</code>
-</p>
-
-<ol>
-<li>
-convert wiki files to html files
-
-</ol>
-<p>
+# convert wiki files to html files
 vim +VimwikiTabIndex +VimwikiAll2HTML +qall
-</p>
 
-<p>
 cd ~/vimwiki
 ${GIT} add --all .
-\({GIT} commit -am "Automated update on \){COMMIT_TIMESTAMP}"
+${GIT} commit -am "Automated update on ${COMMIT_TIMESTAMP}"
 ${GIT} push origin master
-</p>
 
-<p>
 cd ~/vimwiki_html
 ${GIT} add --all .
-\({GIT} commit -am "Automated update on \){COMMIT_TIMESTAMP}"
+${GIT} commit -am "Automated update on ${COMMIT_TIMESTAMP}"
 ${GIT} push origin gh-pages
-```
-</p>
+
+</pre>
 
     </div>
   </div>
