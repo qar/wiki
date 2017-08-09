@@ -1,7 +1,7 @@
+= Vimwiki =
+doc: https://raw.githubusercontent.com/vimwiki/vimwiki/master/doc/vimwiki.txt
 
-Doc: https://raw.githubusercontent.com/vimwiki/vimwiki/master/doc/vimwiki.txt
-
-= Cheet Sheet =
+== [[Cheet]] Sheet ==
 
 {{{
 <Leader>wd              Delete wiki page you are in.
@@ -11,9 +11,9 @@ Doc: https://raw.githubusercontent.com/vimwiki/vimwiki/master/doc/vimwiki.txt
 
 }}}
 
-=== Automated Deploy ===
+== Automated Deploy ==
 
-```
+{{{
 #!/bin/sh
 
 # Generate vimwiki and push to Github pages
@@ -33,4 +33,5 @@ cd ~/vimwiki_html
 ${GIT} add --all .
 ${GIT} commit -am "Automated update on ${COMMIT_TIMESTAMP}"
 ${GIT} push origin gh-pages
-```
+
+}}}

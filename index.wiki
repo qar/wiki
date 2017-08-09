@@ -32,7 +32,7 @@ A New User Friendly JavaScript Framework
 
 [[Vim]]
 
-[[vimwiki]]
+=== [[vimwiki]] ===
 
 [[SASS]]
 
