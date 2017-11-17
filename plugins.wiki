@@ -1,0 +1,17 @@
+
+= Useful Plugins =
+
+=== https://github.com/Yggdroot/indentLine ===
+
+Displaying thin vertical lines at each indentation level for code indented with spaces. 
+
+This plugin takes advantage of the newly provided conceal feature in Vim 7.3, so this plugin will not work with lower versions of Vim.
+
+----
+
+=== https://github.com/vimwiki/vimwiki ===
+
+A personal wiki for Vim -- a number of linked text files that have their own syntax highlighting.
+
+----
+

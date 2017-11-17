@@ -1,4 +1,6 @@
 
+== [[plugins]] ==
+
 Paste text in visual mode without yank
 http://stackoverflow.com/a/5093286/2609042
 `xnoremap p pgvy`

@@ -22,6 +22,10 @@ A New User Friendly JavaScript Framework
 
 === [[BEKM]] ===
 
+=== [[Vim]] ===
+
+The text editor that I'm most comfortable with.
+
 [[OPS]]
 
 [[./git|Git]]
@@ -34,7 +38,6 @@ A New User Friendly JavaScript Framework
 
 [[Python]]
 
-[[Vim]]
 
 === [[vimwiki]] ===
 
