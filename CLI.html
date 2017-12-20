@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html> <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Memory Dump - CLI</title>
+  <link rel="Stylesheet" type="text/css" href="static/bootstrap.min.css">
+  <link rel="Stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+  <div class="site-header">
+    <div class="container">
+      <a class="site-caption" href="/" title="Memory Dump">Memory Dump</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="container">
+      
+<div id="CLI"><h1 id="CLI">CLI</h1></div>
+
+<p>
+<code>find oem-starter-kit/packages -name *.js ! -path "*/node_modules/*" ! -path "*/build/*" ! -path "*/*.pcss.js" ! -path "*/*.pcssm.js" -exec grep -rn 'enableSplunkBar' {} 2&gt;/dev/null \;</code>
+</p>
+
+<p>
+find every .js file which contains 'enableSplunkBar' from oem-starter-kit/packages directory except the files which filename contains build pcss.js or pcssm.js.
+</p>
+
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="container">
+        &copy; memory dump 2017
+    </div>
+  </div>
+</body>
+</html>
