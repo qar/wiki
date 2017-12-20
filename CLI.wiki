@@ -1,0 +1,6 @@
+= CLI =
+
+`find oem-starter-kit/packages -name *.js ! -path "*/node_modules/*" ! -path "*/build/*" ! -path "*/*.pcss.js" ! -path "*/*.pcssm.js" -exec grep -rn 'enableSplunkBar' {} 2>/dev/null \;`
+
+find every .js file which contains 'enableSplunkBar' from oem-starter-kit/packages directory except the files which filename contains build pcss.js or pcssm.js.
+
