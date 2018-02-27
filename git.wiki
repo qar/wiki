@@ -19,3 +19,14 @@ http://stackoverflow.com/questions/5188914/how-to-show-first-commit-by-git-log
 Rebase onto the first commit
 
 `git rebase -i --root master`
+
+----
+
+fetch pull requests locally
+
+edit git config file:
+
+```
+[remote "upstream"]
+        fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
+```
