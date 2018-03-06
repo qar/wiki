@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html> <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Memory Dump - electron</title>
+  <link rel="Stylesheet" type="text/css" href="static/bootstrap.min.css">
+  <link rel="Stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+  <div class="site-header">
+    <div class="container">
+      <a class="site-caption" href="/" title="Memory Dump">Memory Dump</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="container">
+      
+
+<div id="Common Issue"><h2 id="Common Issue">Common Issue</h2></div>
+
+<p>
+<a href="1..html">1.</a> access current user directory in electon (and other special directories) ?
+</p>
+
+<p>
+<a href="https:&#47;&#47;github.com&#47;electron&#47;electron&#47;blob&#47;master&#47;docs&#47;api&#47;app.md#appgetpathname">https://github.com/electron/electron/blob/master/docs/api/app.md#appgetpathname</a>
+</p>
+
+<p>
+basically:
+</p>
+<blockquote>
+home User's home directory.
+appData Per-user application data directory, which by default points to:
+%APPDATA% on Windows
+$XDG_CONFIG_HOME or ~/.config on Linux
+~/Library/Application Support on macOS
+userData The directory for storing your app's configuration files, which by default it is the appData directory appended with your app's name.
+temp Temporary directory.
+exe The current executable file.
+module The libchromiumcontent library.
+desktop The current user's Desktop directory.
+documents Directory for a user's "My Documents".
+downloads Directory for a user's downloads.
+music Directory for a user's music.
+pictures Directory for a user's pictures.
+videos Directory for a user's videos.
+logs Directory for your app's log folder.
+pepperFlashSystemPlugin Full path to the system version of the Pepper Flash plugin.
+</blockquote>
+
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="container">
+        &copy; memory dump 2017
+    </div>
+  </div>
+</body>
+</html>
