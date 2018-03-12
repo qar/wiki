@@ -25,3 +25,6 @@ basically:
     logs Directory for your app's log folder.
     pepperFlashSystemPlugin Full path to the system version of the Pepper Flash plugin.
 
+
+2. debug main process
+https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process.md
