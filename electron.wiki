@@ -28,3 +28,5 @@ basically:
 
 2. debug main process
 https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process.md
+
+3. file manipulation
