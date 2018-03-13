@@ -30,3 +30,7 @@ basically:
 https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process.md
 
 3. file manipulation
+
+copy file
+electron 1.8.2 use node 8.2.1, which doesn't support copyFile, copyFileSync yet
+https://stackoverflow.com/questions/11293857/fastest-way-to-copy-file-in-node-js
