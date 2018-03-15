@@ -32,6 +32,8 @@ The text editor that I'm most comfortable with.
 
 == [[./electron|Electron]] ==
 
+== [[./cheetsheet|CheetSheet]] ==
+
 
 [[OPS]]
 
