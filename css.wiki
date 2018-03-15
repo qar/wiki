@@ -22,3 +22,6 @@ text-align: center;
     |--------------------|-----------------------|----------------------|-----------------|--------------|
     | In document flow ? | Yes                   | Yes                  | No              | No           |
     | Invisible          | Yes                   | Yes                  | Yes             | Yes          |
+    
+    
+- How to use Google Fonts offline
