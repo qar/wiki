@@ -37,7 +37,7 @@ The text editor that I'm most comfortable with.
 
 [[OPS]]
 
-[[./git|Git]]
+== [[./git|Git]] ==
 
 [[Angular]]
 
