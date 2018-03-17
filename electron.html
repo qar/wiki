@@ -74,6 +74,41 @@ electron 1.8.2 use node 8.2.1, which doesn't support copyFile, copyFileSync yet
 <a href="https:&#47;&#47;stackoverflow.com&#47;questions&#47;11293857&#47;fastest-way-to-copy-file-in-node-js">https://stackoverflow.com/questions/11293857/fastest-way-to-copy-file-in-node-js</a>
 </p>
 
+<ul>
+<li>
+hide window when click the close icon
+
+</ul>
+
+<pre>
+// override close event handler，when 「close」，hide instead
+let willQuit = false; // if use want to quit
+
+win.on('close', ev =&gt; {
+  if (willQuit) {
+    win = null;
+  } else {
+    ev.preventDefault();
+    win.hide();
+  }
+});
+
+// click 'quit' menu from dock icon.
+app.on('before-quit', () =&gt; { willQuit = true });
+
+app.on('activate', () =&gt; {
+  // 在macOS上，当单击dock图标并且没有其他窗口打开时，
+  // 通常在应用程序中重新创建一个窗口。
+  if (win === null) {
+    createWindow()
+  } else {
+    if (!win.isVisible()) {
+      win.restore();
+    }
+  }
+});
+</pre>
+
     </div>
   </div>
 
