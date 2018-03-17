@@ -4,3 +4,7 @@
 
 find every .js file which contains 'enableSplunkBar' from oem-starter-kit/packages directory except the files which filename contains build pcss.js or pcssm.js.
 
+= Crontab =
+
+1. every N minites
+

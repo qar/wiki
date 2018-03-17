@@ -30,9 +30,9 @@ The text editor that I'm most comfortable with.
 
 === [[CLI]] ===
 
-== [[./electron|Electron]] ==
+=== [[./electron|Electron]] ===
 
-== [[./cheetsheet|CheetSheet]] ==
+=== [[./cheetsheet|CheetSheet]] ===
 
 
 [[OPS]]
