@@ -1,38 +1,46 @@
 
-== Common Issue ==
+= Common Issue =
 
-[[1.]] access current user directory in electon (and other special directories) ?
+== How to access current user directory in electon (and other special directories) ? ==
 
 https://github.com/electron/electron/blob/master/docs/api/app.md#appgetpathname
 
 basically:
 
-home:: User's home directory.
-appData:: Per-user application data directory, which by default points to: %APPDATA% on Windows, $XDG_CONFIG_HOME or ~/.config on Linux, ~/Library/Application Support on macOS
-userData:: The directory for storing your app's configuration files, which by default it is the appData directory appended with your app's name.
-temp:: Temporary directory.
-exe:: The current executable file.
-module:: The libchromiumcontent library.
-desktop:: The current user's Desktop directory.
-documents:: Directory for a user's "My Documents".
-downloads:: Directory for a user's downloads.
-music:: Directory for a user's music.
-pictures:: Directory for a user's pictures.
-videos:: Directory for a user's videos.
-logs:: Directory for your app's log folder.
-pepperFlashSystemPlugin:: Full path to the system version of the Pepper Flash plugin.
+    - *home* User's home directory.
+    - *appData* Per-user application data directory, which by default points to:
+      - *%APPDATA%* on Windows
+      - *$XDG_CONFIG_HOME* or *~/.config* on Linux
+      - *~/Library/Application* Support on macOS
+    - *userData* The directory for storing your app's configuration files, which by default it is the appData directory appended with your app's name.
+    - *temp* Temporary directory.
+    - *exe* The current executable file.
+    - *module* The libchromiumcontent library.
+    - *desktop* The current user's Desktop directory.
+    - *documents* Directory for a user's "My Documents".
+    - *downloads* Directory for a user's downloads.
+    - *music* Directory for a user's music.
+    - *pictures* Directory for a user's pictures.
+    - *videos* Directory for a user's videos.
+    - *logs* Directory for your app's log folder.
+    - *pepperFlashSystemPlugin* Full path to the system version of the Pepper Flash plugin.
 
+----
 
-2. debug main process
+== debug main process ==
 https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process.md
 
-3. file manipulation
+----
+
+== file manipulation ==
 
 copy file
 electron 1.8.2 use node 8.2.1, which doesn't support copyFile, copyFileSync yet
 https://stackoverflow.com/questions/11293857/fastest-way-to-copy-file-in-node-js
 
-- hide window when click the close icon
+----
+
+== hide window when click the close icon ==
 
 {{{
 // override close event handler，when 「close」，hide instead
@@ -62,3 +70,5 @@ app.on('activate', () => {
   }
 });
 }}}
+
+----
