@@ -1,7 +1,9 @@
 
-= Common Issue =
+= Electron =
 
-== How to access current user directory in electon (and other special directories) ? ==
+== Common Issue ==
+
+=== How to access current user directory in electon (and other special directories) ? ===
 
 https://github.com/electron/electron/blob/master/docs/api/app.md#appgetpathname
 
@@ -27,12 +29,12 @@ basically:
 
 ----
 
-== debug main process ==
+=== debug main process ===
 https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process.md
 
 ----
 
-== file manipulation ==
+=== file manipulation ===
 
 copy file
 electron 1.8.2 use node 8.2.1, which doesn't support copyFile, copyFileSync yet
@@ -40,7 +42,7 @@ https://stackoverflow.com/questions/11293857/fastest-way-to-copy-file-in-node-js
 
 ----
 
-== hide window when click the close icon ==
+=== hide window when click the close icon ===
 
 {{{
 // override close event handler，when 「close」，hide instead
@@ -72,3 +74,18 @@ app.on('activate', () => {
 }}}
 
 ----
+
+
+=== Change app name in menu bar ===
+
+https://discuss.atom.io/t/change-app-name-in-menu-bar/39839
+
+
+    Hi, to answer in two words; you cant.
+    
+    The more detailed answer; The menu containing the Application Name and About dialog are part of OS X’s interface, it displays the name of the application that is running. During development you are, like most people, simply loading your application into electron, therefore it is electron that is running so Mac OSX displays Electron and it’s dialog information.
+    
+    When you build your application (package it to use your terminology) you are building the application to run as whatever you have named your app and therefore it will display your applications name.
+    
+    If you want to do this during development then you can simply build/package your application everytime you make a change, this from a time perspective is very wasteful as its easier to just run your application code during development inside electron where you can make changes in real time and they instantly apply, if you build/package your own app you would need to repackage it every time you made a change to the code.
+
