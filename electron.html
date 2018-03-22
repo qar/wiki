@@ -19,11 +19,9 @@
     <div class="container">
       
 
-<div id="Common Issue"><h2 id="Common Issue">Common Issue</h2></div>
+<div id="Common Issue"><h1 id="Common Issue">Common Issue</h1></div>
 
-<p>
-<a href="1..html">1.</a> access current user directory in electon (and other special directories) ?
-</p>
+<div id="Common Issue-How to access current user directory in electon (and other special directories) ?"><h2 id="How to access current user directory in electon (and other special directories) ?">How to access current user directory in electon (and other special directories) ?</h2></div>
 
 <p>
 <a href="https:&#47;&#47;github.com&#47;electron&#47;electron&#47;blob&#47;master&#47;docs&#47;api&#47;app.md#appgetpathname">https://github.com/electron/electron/blob/master/docs/api/app.md#appgetpathname</a>
@@ -33,52 +31,72 @@
 basically:
 </p>
 
-<dl>
-<dt>home</dt>
-<dd>User's home directory.</dd>
-<dt>appData</dt>
-<dd>Per-user application data directory, which by default points to: %APPDATA% on Windows, $XDG_CONFIG_HOME or ~/.config on Linux, ~/Library/Application Support on macOS</dd>
-<dt>userData</dt>
-<dd>The directory for storing your app's configuration files, which by default it is the appData directory appended with your app's name.</dd>
-<dt>temp</dt>
-<dd>Temporary directory.</dd>
-<dt>exe</dt>
-<dd>The current executable file.</dd>
-<dt>module</dt>
-<dd>The libchromiumcontent library.</dd>
-<dt>desktop</dt>
-<dd>The current user's Desktop directory.</dd>
-<dt>documents</dt>
-<dd>Directory for a user's "My Documents".</dd>
-<dt>downloads</dt>
-<dd>Directory for a user's downloads.</dd>
-<dt>music</dt>
-<dd>Directory for a user's music.</dd>
-<dt>pictures</dt>
-<dd>Directory for a user's pictures.</dd>
-<dt>videos</dt>
-<dd>Directory for a user's videos.</dd>
-<dt>logs</dt>
-<dd>Directory for your app's log folder.</dd>
-<dt>pepperFlashSystemPlugin</dt>
-<dd>Full path to the system version of the Pepper Flash plugin.</dd>
-</dl>
-
-
-<ol>
+<ul>
 <li>
-debug main process
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-home"></span><strong id="home">home</strong> User's home directory.
 
-</ol>
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-appData"></span><strong id="appData">appData</strong> Per-user application data directory, which by default points to:
+
+<ul>
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-%APPDATA%"></span><strong id="%APPDATA%">%APPDATA%</strong> on Windows
+
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-\(XDG_CONFIG_HOME"></span><strong id="\)XDG_CONFIG_HOME">$XDG_CONFIG_HOME</strong> or <span id="Common Issue-How to access current user directory in electon (and other special directories) ?-~&#47;.config"></span><strong id="~&#47;.config">~/.config</strong> on Linux
+
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-~&#47;Library&#47;Application"></span><strong id="~&#47;Library&#47;Application">~/Library/Application</strong> Support on macOS
+
+</ul>
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-userData"></span><strong id="userData">userData</strong> The directory for storing your app's configuration files, which by default it is the appData directory appended with your app's name.
+
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-temp"></span><strong id="temp">temp</strong> Temporary directory.
+
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-exe"></span><strong id="exe">exe</strong> The current executable file.
+
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-module"></span><strong id="module">module</strong> The libchromiumcontent library.
+
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-desktop"></span><strong id="desktop">desktop</strong> The current user's Desktop directory.
+
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-documents"></span><strong id="documents">documents</strong> Directory for a user's "My Documents".
+
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-downloads"></span><strong id="downloads">downloads</strong> Directory for a user's downloads.
+
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-music"></span><strong id="music">music</strong> Directory for a user's music.
+
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-pictures"></span><strong id="pictures">pictures</strong> Directory for a user's pictures.
+
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-videos"></span><strong id="videos">videos</strong> Directory for a user's videos.
+
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-logs"></span><strong id="logs">logs</strong> Directory for your app's log folder.
+
+<li>
+<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-pepperFlashSystemPlugin"></span><strong id="pepperFlashSystemPlugin">pepperFlashSystemPlugin</strong> Full path to the system version of the Pepper Flash plugin.
+
+</ul>
+
+<hr />
+
+<div id="Common Issue-debug main process"><h2 id="debug main process">debug main process</h2></div>
 <p>
 <a href="https:&#47;&#47;github.com&#47;electron&#47;electron&#47;blob&#47;master&#47;docs&#47;tutorial&#47;debugging-main-process.md">https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process.md</a>
 </p>
 
-<ol>
-<li>
-file manipulation
+<hr />
 
-</ol>
+<div id="Common Issue-file manipulation"><h2 id="file manipulation">file manipulation</h2></div>
 
 <p>
 copy file
@@ -86,11 +104,9 @@ electron 1.8.2 use node 8.2.1, which doesn't support copyFile, copyFileSync yet
 <a href="https:&#47;&#47;stackoverflow.com&#47;questions&#47;11293857&#47;fastest-way-to-copy-file-in-node-js">https://stackoverflow.com/questions/11293857/fastest-way-to-copy-file-in-node-js</a>
 </p>
 
-<ul>
-<li>
-hide window when click the close icon
+<hr />
 
-</ul>
+<div id="Common Issue-hide window when click the close icon"><h2 id="hide window when click the close icon">hide window when click the close icon</h2></div>
 
 <pre>
 // override close event handler，when 「close」，hide instead
@@ -120,6 +136,8 @@ app.on('activate', () =&gt; {
   }
 });
 </pre>
+
+<hr />
 
     </div>
   </div>
