@@ -19,9 +19,11 @@
     <div class="container">
       
 
-<div id="Common Issue"><h1 id="Common Issue">Common Issue</h1></div>
+<div id="Electron"><h1 id="Electron">Electron</h1></div>
 
-<div id="Common Issue-How to access current user directory in electon (and other special directories) ?"><h2 id="How to access current user directory in electon (and other special directories) ?">How to access current user directory in electon (and other special directories) ?</h2></div>
+<div id="Electron-Common Issue"><h2 id="Common Issue">Common Issue</h2></div>
+
+<div id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?"><h3 id="How to access current user directory in electon (and other special directories) ?">How to access current user directory in electon (and other special directories) ?</h3></div>
 
 <p>
 <a href="https:&#47;&#47;github.com&#47;electron&#47;electron&#47;blob&#47;master&#47;docs&#47;api&#47;app.md#appgetpathname">https://github.com/electron/electron/blob/master/docs/api/app.md#appgetpathname</a>
@@ -33,70 +35,70 @@ basically:
 
 <ul>
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-home"></span><strong id="home">home</strong> User's home directory.
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-home"></span><strong id="home">home</strong> User's home directory.
 
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-appData"></span><strong id="appData">appData</strong> Per-user application data directory, which by default points to:
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-appData"></span><strong id="appData">appData</strong> Per-user application data directory, which by default points to:
 
 <ul>
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-%APPDATA%"></span><strong id="%APPDATA%">%APPDATA%</strong> on Windows
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-%APPDATA%"></span><strong id="%APPDATA%">%APPDATA%</strong> on Windows
 
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-\(XDG_CONFIG_HOME"></span><strong id="\)XDG_CONFIG_HOME">$XDG_CONFIG_HOME</strong> or <span id="Common Issue-How to access current user directory in electon (and other special directories) ?-~&#47;.config"></span><strong id="~&#47;.config">~/.config</strong> on Linux
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-\(XDG_CONFIG_HOME"></span><strong id="\)XDG_CONFIG_HOME">$XDG_CONFIG_HOME</strong> or <span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-~&#47;.config"></span><strong id="~&#47;.config">~/.config</strong> on Linux
 
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-~&#47;Library&#47;Application"></span><strong id="~&#47;Library&#47;Application">~/Library/Application</strong> Support on macOS
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-~&#47;Library&#47;Application"></span><strong id="~&#47;Library&#47;Application">~/Library/Application</strong> Support on macOS
 
 </ul>
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-userData"></span><strong id="userData">userData</strong> The directory for storing your app's configuration files, which by default it is the appData directory appended with your app's name.
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-userData"></span><strong id="userData">userData</strong> The directory for storing your app's configuration files, which by default it is the appData directory appended with your app's name.
 
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-temp"></span><strong id="temp">temp</strong> Temporary directory.
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-temp"></span><strong id="temp">temp</strong> Temporary directory.
 
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-exe"></span><strong id="exe">exe</strong> The current executable file.
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-exe"></span><strong id="exe">exe</strong> The current executable file.
 
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-module"></span><strong id="module">module</strong> The libchromiumcontent library.
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-module"></span><strong id="module">module</strong> The libchromiumcontent library.
 
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-desktop"></span><strong id="desktop">desktop</strong> The current user's Desktop directory.
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-desktop"></span><strong id="desktop">desktop</strong> The current user's Desktop directory.
 
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-documents"></span><strong id="documents">documents</strong> Directory for a user's "My Documents".
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-documents"></span><strong id="documents">documents</strong> Directory for a user's "My Documents".
 
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-downloads"></span><strong id="downloads">downloads</strong> Directory for a user's downloads.
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-downloads"></span><strong id="downloads">downloads</strong> Directory for a user's downloads.
 
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-music"></span><strong id="music">music</strong> Directory for a user's music.
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-music"></span><strong id="music">music</strong> Directory for a user's music.
 
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-pictures"></span><strong id="pictures">pictures</strong> Directory for a user's pictures.
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-pictures"></span><strong id="pictures">pictures</strong> Directory for a user's pictures.
 
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-videos"></span><strong id="videos">videos</strong> Directory for a user's videos.
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-videos"></span><strong id="videos">videos</strong> Directory for a user's videos.
 
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-logs"></span><strong id="logs">logs</strong> Directory for your app's log folder.
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-logs"></span><strong id="logs">logs</strong> Directory for your app's log folder.
 
 <li>
-<span id="Common Issue-How to access current user directory in electon (and other special directories) ?-pepperFlashSystemPlugin"></span><strong id="pepperFlashSystemPlugin">pepperFlashSystemPlugin</strong> Full path to the system version of the Pepper Flash plugin.
+<span id="Electron-Common Issue-How to access current user directory in electon (and other special directories) ?-pepperFlashSystemPlugin"></span><strong id="pepperFlashSystemPlugin">pepperFlashSystemPlugin</strong> Full path to the system version of the Pepper Flash plugin.
 
 </ul>
 
 <hr />
 
-<div id="Common Issue-debug main process"><h2 id="debug main process">debug main process</h2></div>
+<div id="Electron-Common Issue-debug main process"><h3 id="debug main process">debug main process</h3></div>
 <p>
 <a href="https:&#47;&#47;github.com&#47;electron&#47;electron&#47;blob&#47;master&#47;docs&#47;tutorial&#47;debugging-main-process.md">https://github.com/electron/electron/blob/master/docs/tutorial/debugging-main-process.md</a>
 </p>
 
 <hr />
 
-<div id="Common Issue-file manipulation"><h2 id="file manipulation">file manipulation</h2></div>
+<div id="Electron-Common Issue-file manipulation"><h3 id="file manipulation">file manipulation</h3></div>
 
 <p>
 copy file
@@ -106,7 +108,7 @@ electron 1.8.2 use node 8.2.1, which doesn't support copyFile, copyFileSync yet
 
 <hr />
 
-<div id="Common Issue-hide window when click the close icon"><h2 id="hide window when click the close icon">hide window when click the close icon</h2></div>
+<div id="Electron-Common Issue-hide window when click the close icon"><h3 id="hide window when click the close icon">hide window when click the close icon</h3></div>
 
 <pre>
 // override close event handler，when 「close」，hide instead
@@ -138,6 +140,25 @@ app.on('activate', () =&gt; {
 </pre>
 
 <hr />
+
+
+<div id="Electron-Common Issue-Change app name in menu bar"><h3 id="Change app name in menu bar">Change app name in menu bar</h3></div>
+
+<p>
+<a href="https:&#47;&#47;discuss.atom.io&#47;t&#47;change-app-name-in-menu-bar&#47;39839">https://discuss.atom.io/t/change-app-name-in-menu-bar/39839</a>
+</p>
+<blockquote>
+Hi, to answer in two words; you cant.
+</blockquote>
+<blockquote>
+The more detailed answer; The menu containing the Application Name and About dialog are part of OS X’s interface, it displays the name of the application that is running. During development you are, like most people, simply loading your application into electron, therefore it is electron that is running so Mac OSX displays Electron and it’s dialog information.
+</blockquote>
+<blockquote>
+When you build your application (package it to use your terminology) you are building the application to run as whatever you have named your app and therefore it will display your applications name.
+</blockquote>
+<blockquote>
+If you want to do this during development then you can simply build/package your application everytime you make a change, this from a time perspective is very wasteful as its easier to just run your application code during development inside electron where you can make changes in real time and they instantly apply, if you build/package your own app you would need to repackage it every time you made a change to the code.
+</blockquote>
 
     </div>
   </div>
