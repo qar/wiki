@@ -1,5 +1,9 @@
-= Vimwiki =
+== Vimwiki ==
 doc: https://raw.githubusercontent.com/vimwiki/vimwiki/master/doc/vimwiki.txt
+
+== Quick References ==
+
+http://www.picb.ac.cn/~xiaohang/vimwiki/tools/commands/vimwiki/Vimwiki1.1.1QR.pdf
 
 == [[Cheet]] Sheet ==
 

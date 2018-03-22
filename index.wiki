@@ -34,6 +34,7 @@ The text editor that I'm most comfortable with.
 
 === [[./cheetsheet|CheetSheet]] ===
 
+=== [[vimwiki]] ===
 
 [[OPS]]
 
@@ -46,9 +47,6 @@ The text editor that I'm most comfortable with.
 [[NPM]]
 
 [[Python]]
-
-
-=== [[vimwiki]] ===
 
 [[SASS]]
 
