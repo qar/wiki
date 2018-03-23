@@ -1,6 +1,10 @@
 
 = Electron =
 
+== DOs and DONTs ==
+
+1. Don's handle dialogs in renderer process, which will block rendering 
+
 == Common Issue ==
 
 === How to access current user directory in electon (and other special directories) ? ===
