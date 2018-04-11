@@ -36,6 +36,8 @@ The text editor that I'm most comfortable with.
 
 === [[vimwiki]] ===
 
+=== [[vagrant]] ===
+
 [[OPS]]
 
 == [[./git|Git]] ==
@@ -68,6 +70,5 @@ https://github.com/robbyrussell/oh-my-zsh
 
 [[Others]]
 
-[[vagrant]]
 
 [[npm]]
