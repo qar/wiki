@@ -1,0 +1,11 @@
+= SQLite3 =
+
+== Frequently Used Syntax ==
+
+==== 1. Add a column ====
+
+with python:
+
+{{{
+cursor.execute()
+}}}

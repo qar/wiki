@@ -38,6 +38,8 @@ The text editor that I'm most comfortable with.
 
 === [[vagrant]] ===
 
+=== [[sqlite3|SQLite3]] ===
+
 [[OPS]]
 
 == [[./git|Git]] ==
