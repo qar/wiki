@@ -40,9 +40,9 @@ The text editor that I'm most comfortable with.
 
 === [[sqlite3|SQLite3]] ===
 
-[[OPS]]
+=== [[./git|Git]] ===
 
-== [[./git|Git]] ==
+[[OPS]]
 
 [[Angular]]
 

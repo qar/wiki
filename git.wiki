@@ -1,4 +1,6 @@
-= submodules =
+= Git =
+
+== submodules ==
 
 
   http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit
