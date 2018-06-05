@@ -42,6 +42,8 @@ The text editor that I'm most comfortable with.
 
 === [[./git|Git]] ===
 
+=== [[rime|RIME]] ===
+
 [[OPS]]
 
 [[Angular]]
