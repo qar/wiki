@@ -18,13 +18,17 @@
   <div class="main-content">
     <div class="container">
       
-<div id="Git"><h1 id="Git">Git</h1></div>
+<p>
+= Git =
+</p>
 
-<div id="Git-submodules"><h2 id="submodules">submodules</h2></div>
+<p>
+== submodules ==
+</p>
 
 
 <p>
-  <a href="http:&#47;&#47;stackoverflow.com&#47;questions&#47;927358&#47;how-do-you-undo-the-last-commit">http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit</a>
+  http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit
   revert a commit: <code>git revert &lt;commit&gt;</code>
 </p>
 
@@ -47,7 +51,7 @@ redo last commit: <code>git reset HEAD~</code>
 
 <p>
 Find the first commit: <code>git rev-list --max-parents=0 HEAD</code>
-<a href="http:&#47;&#47;stackoverflow.com&#47;questions&#47;5188914&#47;how-to-show-first-commit-by-git-log">http://stackoverflow.com/questions/5188914/how-to-show-first-commit-by-git-log</a>
+http://stackoverflow.com/questions/5188914/how-to-show-first-commit-by-git-log
 </p>
 
 <p>
@@ -59,6 +63,17 @@ Rebase onto the first commit
 </p>
 
 <hr />
+
+<p>
+get the last commit
+</p>
+
+<p>
+<code>git rev-parse HEAD</code>
+</p>
+ 
+<hr />
+
 
 <p>
 fetch pull requests locally
@@ -73,7 +88,7 @@ edit git config file:
 [remote "upstream"]
 </p>
 <blockquote>
-fetch = +refs/pull/<span id="Git-submodules-&#47;head:refs&#47;remotes&#47;upstream&#47;pr&#47;"></span><strong id="&#47;head:refs&#47;remotes&#47;upstream&#47;pr&#47;">/head:refs/remotes/upstream/pr/</strong>
+fetch = +refs/pull/<span id="-&#47;head:refs&#47;remotes&#47;upstream&#47;pr&#47;"></span><strong id="&#47;head:refs&#47;remotes&#47;upstream&#47;pr&#47;">/head:refs/remotes/upstream/pr/</strong>
 </blockquote>
 <p>
 ```
