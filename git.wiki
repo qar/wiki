@@ -24,6 +24,13 @@ Rebase onto the first commit
 
 ----
 
+get the last commit
+
+`git rev-parse HEAD`
+ 
+-----
+
+
 fetch pull requests locally
 
 edit git config file:
