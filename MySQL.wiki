@@ -1,8 +1,0 @@
-== installation ==
-https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-14-04
-
-查看数据库路径
-`SELECT @@DATADIR`
-
-can't drop database
-http://stackoverflow.com/questions/16527054/drop-database-return-error-dropping-database-errno-66-in-mysql

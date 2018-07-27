@@ -60,19 +60,4 @@ The text editor that I'm most comfortable with.
 
 [[Vagrant]]
 
-[[English]]
-
-https://github.com/robbyrussell/oh-my-zsh
-
-[[zsh]]
-
-[[http]]
-
-[[mysql]]
-
-[[css]]
-
 [[Others]]
-
-
-[[npm]]
