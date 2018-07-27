@@ -1,8 +1,0 @@
-= Games I loved =
-
-=== Overwatch ===
-
-
-=== Battlefield4 ===
-
-- 如何关闭控制台(console): 使用 `~` 快捷键

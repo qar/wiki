@@ -1,32 +1,12 @@
 %template index
 
-=== [[./games|Games]] ===
-Games I loved.
-
-=== [[./vuejs|Vue JS]] ===
-A New User Friendly JavaScript Framework
-
 === [[./docker|Docker]] ===
 
 === [[JavaScript]] ===
 
 === [[TypeScript]] ===
 
-=== [[MySQL]] ===
-
-=== [[ZSH]] ===
-
-=== [[LDAP]] ===
-
-=== [[FEKM]] ===
-
-=== [[BEKM]] ===
-
 === [[Vim]] ===
-
-=== [[./reactjs|ReactJS]] ===
-
-The text editor that I'm most comfortable with.
 
 === [[CLI]] ===
 
