@@ -46,3 +46,5 @@ http://www.projectatomic.io/blog/2015/07/what-are-docker-none-none-images/
 ----
 :constraints:
 https://github.com/docker/docker/blob/master/vendor/github.com/docker/swarmkit/manager/constraint/constraint.go#L107
+
+docker-compose up never rebuilds an image. You can run docker-compose build to build the images.

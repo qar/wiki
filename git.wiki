@@ -39,3 +39,6 @@ edit git config file:
 [remote "upstream"]
         fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
 ```
+
+Recover file from commit
+`git checkout <COMMIT>^ -- "<FILE_PATH>"`
