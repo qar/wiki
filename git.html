@@ -18,17 +18,13 @@
   <div class="main-content">
     <div class="container">
       
-<p>
-= Git =
-</p>
+<div id="Git"><h1 id="Git">Git</h1></div>
 
-<p>
-== submodules ==
-</p>
+<div id="Git-submodules"><h2 id="submodules">submodules</h2></div>
 
 
 <p>
-  http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit
+  <a href="http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit">http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit</a>
   revert a commit: <code>git revert &lt;commit&gt;</code>
 </p>
 
@@ -51,7 +47,7 @@ redo last commit: <code>git reset HEAD~</code>
 
 <p>
 Find the first commit: <code>git rev-list --max-parents=0 HEAD</code>
-http://stackoverflow.com/questions/5188914/how-to-show-first-commit-by-git-log
+<a href="http://stackoverflow.com/questions/5188914/how-to-show-first-commit-by-git-log">http://stackoverflow.com/questions/5188914/how-to-show-first-commit-by-git-log</a>
 </p>
 
 <p>
@@ -88,10 +84,15 @@ edit git config file:
 [remote "upstream"]
 </p>
 <blockquote>
-fetch = +refs/pull/<span id="-&#47;head:refs&#47;remotes&#47;upstream&#47;pr&#47;"></span><strong id="&#47;head:refs&#47;remotes&#47;upstream&#47;pr&#47;">/head:refs/remotes/upstream/pr/</strong>
+fetch = +refs/pull/<span id="Git-submodules-/head:refs/remotes/upstream/pr/"></span><strong id="/head:refs/remotes/upstream/pr/">/head:refs/remotes/upstream/pr/</strong>
 </blockquote>
 <p>
 ```
+</p>
+
+<p>
+Recover file from commit
+<code>git checkout &lt;COMMIT&gt;^ -- "&lt;FILE_PATH&gt;"</code>
 </p>
 
     </div>
